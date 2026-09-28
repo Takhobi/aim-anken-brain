@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=IBM+Plex+Mono:wght@500;600&display=swap">
 <style>
 :root{
+  color-scheme:light;
   --bg:#FFF4EA; --surface:#FFFFFF; --surface-2:#FFF9F4; --ink:#1E1510; --muted:#7C6453; --line:#F0D9C6;
   --orange:#FF5A00; --orange-deep:#E04600; --orange-2:#FF8C42; --orange-soft:#FFE3CF; --on-orange:#FFFFFF;
   --navy:#1D2640; --ok:#138A5A; --ok-soft:#DDF3E8; --warn:#B86E00; --warn-soft:#FFF0D2; --ng:#C9372E; --ng-soft:#FCE1DE;
@@ -22,20 +23,6 @@
   --display:"Dela Gothic One","Zen Kaku Gothic New","Hiragino Sans","Yu Gothic",sans-serif;
   --body:"Zen Kaku Gothic New","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;
   --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
-}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  color-scheme:dark;
-  --bg:#150E09; --surface:#211710; --surface-2:#1A120C; --ink:#FCEFE4; --muted:#C2A794; --line:#3B2A1E;
-  --orange:#FF6B1A; --orange-deep:#FF8440; --orange-2:#FF9A5A; --orange-soft:#3D2212; --on-orange:#1A0D05;
-  --navy:#D6DDF5; --ok:#4FD19A; --ok-soft:#143325; --warn:#F2B347; --warn-soft:#3A2A0E; --ng:#FF7D72; --ng-soft:#3D1714;
-  --shadow:0 1px 0 rgba(0,0,0,.4),0 10px 28px -16px rgba(0,0,0,.8);
-}}
-:root[data-theme="dark"]{
-  color-scheme:dark;
-  --bg:#150E09; --surface:#211710; --surface-2:#1A120C; --ink:#FCEFE4; --muted:#C2A794; --line:#3B2A1E;
-  --orange:#FF6B1A; --orange-deep:#FF8440; --orange-2:#FF9A5A; --orange-soft:#3D2212; --on-orange:#1A0D05;
-  --navy:#D6DDF5; --ok:#4FD19A; --ok-soft:#143325; --warn:#F2B347; --warn-soft:#3A2A0E; --ng:#FF7D72; --ng-soft:#3D1714;
-  --shadow:0 1px 0 rgba(0,0,0,.4),0 10px 28px -16px rgba(0,0,0,.8);
 }
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.7;-webkit-font-smoothing:antialiased}
