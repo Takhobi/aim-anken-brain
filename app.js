@@ -19,7 +19,7 @@ const S = {
   base: [], meta: null, loadErr: "",
   custom: LS.get("custom", []), status: LS.get("status", {}), analyses: LS.get("analyses", {}),
   drafts: LS.get("drafts", {}), memo: LS.get("memo", {}), profile: LS.get("profile", null),
-  current: null, tab: "B", tone: "A", instr: "", redo: {}, flow: null, reply: "", error: "",
+  current: null, tab: "B", tone: "A", instr: "", redo: {}, flow: null, reply: "", error: "", running: null,
 };
 const save = k => LS.set(k, S[k]);
 
@@ -247,6 +247,18 @@ function viewProfile(){
   </div>
   <div class="row" style="margin-top:16px"><button class="btn primary" data-act="save-profile">保存する</button>
   ${S.profile ? `<button class="btn ghost" data-go="pick">案件リストへ</button>` : ""}</div></section>
+  <section class="card"><span class="eyebrow">Claude API 連携（任意）</span><h3>APIキーを登録して、ボタン1つで分析・営業文づくり</h3>
+    <p class="quiet">登録すると「Claude で分析する」「Claude で営業文を書く」ボタンが使えるようになり、コピー＆貼り付けが要らなくなります。利用料はご自身の Anthropic アカウントに請求されます（使用モデル：Claude Opus 5。目安は1回あたり十数円〜数十円／推定）。</p>
+    <ol class="quiet" style="font-size:14px;margin:8px 0;padding-left:1.3em">
+      <li><a href="https://console.anthropic.com/" target="_blank" rel="noopener">Anthropic のコンソール</a>に登録し、クレジットを購入する</li>
+      <li>「API Keys」で新しいキーを作り、<b>sk-ant-</b> から始まる文字列をコピーする</li>
+      <li>下の欄に貼って保存する</li>
+    </ol>
+    <div class="row"><input type="password" id="pf-key" autocomplete="off" style="flex:1;min-width:220px" placeholder="sk-ant-..." value="${esc(getKey())}">
+      <button class="btn primary sm" data-act="save-key">保存する</button>
+      ${getKey() ? `<button class="btn ghost sm" data-act="clear-key">キーを消す</button>` : ""}</div>
+    <p class="quiet" style="font-size:13px;margin-top:8px">キーはこのブラウザの中だけに保存され、Claude（api.anthropic.com）への呼び出しにだけ使います。共用のパソコンでは登録しないでください。念のため、コンソールで月の利用上限を設定しておくのがおすすめです。</p>
+  </section>
   <section class="card"><span class="eyebrow">データの持ち運び</span><h3>バックアップと引っ越し</h3>
     <p class="quiet">選んだ案件・分析・営業文もこのブラウザに保存されています。別のパソコンに移すときや、念のための控えに使ってください。</p>
     <div class="row" style="margin-top:10px"><button class="btn ghost" data-act="export">データを書き出す</button>
@@ -321,18 +333,34 @@ function cardJob(j){
 }
 
 /* 「Claude に聞く」共通カード */
+const API_LABEL = {axes: "分析する", ref: "再現ポイントを出す", draft: "営業文を書く", addjob: "カードを作る"};
 function flowCard(kind, id, prompt, title, doneLabel){
   const active = S.flow && S.flow.kind === kind && S.flow.id === id;
+  const hasKey = !!getKey();
+  const run = S.running && S.running.kind === kind && S.running.id === id ? S.running : null;
+  const manual = manualSteps(kind, id, prompt, doneLabel, active);
+  if (!hasKey) return `<div class="flow-box">${manual}
+    <p class="quiet" style="font-size:13px;margin:10px 0 0">Anthropic の APIキーを<button class="btn ghost sm" data-go="profile">プロフィール画面</button>で登録すると、この手順がボタン1つになります。</p></div>`;
   return `<div class="flow-box">
-    <ol class="flow-steps">
+    <div class="row">
+      <button class="btn primary" data-act="api-run" data-kind="${kind}" data-id="${esc(id)}" ${S.running ? "disabled" : ""}>Claude で${API_LABEL[kind] || "実行する"}</button>
+      ${run ? `<span class="thinking"><span class="dot"></span>${run.text ? "書いています…" : "考えています…（30秒〜1分）"}</span><button class="btn ghost sm" data-act="api-stop">止める</button>` : `<span class="quiet" style="font-size:13px">あなたの APIキーで Claude を呼びます</span>`}
+    </div>
+    ${run && run.text ? `<pre class="prompt" id="live">${esc(run.text.slice(-500))}</pre>` : ""}
+    ${active && S.error ? `<p class="err">${esc(S.error)}</p>` : ""}
+    <details style="margin-top:10px"><summary>APIを使わずに、コピーして自分の Claude に貼る</summary>${manual}</details>
+  </div>`;
+}
+function manualSteps(kind, id, prompt, doneLabel, active){
+  return `<ol class="flow-steps" style="margin-top:8px">
       <li><b>指示文をコピー</b><div class="row"><button class="btn primary sm" data-act="flow-copy" data-kind="${kind}" data-id="${esc(id)}">指示文をコピー</button>
         <details><summary>中身を見る</summary><pre class="prompt">${esc(prompt)}</pre></details></div></li>
       <li><b>自分の Claude に貼って送る</b><div class="row"><a class="btn ghost sm" href="https://claude.ai/new" target="_blank" rel="noopener">Claude を開く</a><span class="quiet" style="font-size:13px">新しいチャットに貼り付けて送信します</span></div></li>
       <li><b>返ってきた答えを全部コピーして、ここに貼る</b>
         <textarea id="reply-${kind}" rows="5" placeholder="Claude の答え（{ から始まる部分）をそのまま貼る">${active ? esc(S.reply) : ""}</textarea>
         <div class="row" style="margin-top:8px"><button class="btn primary" data-act="flow-apply" data-kind="${kind}" data-id="${esc(id)}">${doneLabel}</button></div>
-        ${active && S.error ? `<p class="err">${esc(S.error)}</p>` : ""}</li>
-    </ol></div>`;
+        ${active && S.error && !getKey() ? `<p class="err">${esc(S.error)}</p>` : ""}</li>
+    </ol>`;
 }
 function addJobCard(){
   const f = S.flow || {};
@@ -508,8 +536,59 @@ async function copyText(t, okMsg){
   try { await navigator.clipboard.writeText(t); toast(okMsg); }
   catch(e){ const ta = document.createElement("textarea"); ta.value = t; document.body.appendChild(ta); ta.select(); try { document.execCommand("copy"); toast(okMsg); } catch(_){ toast("コピーできませんでした。中身を見るから手でコピーしてください"); } ta.remove(); }
 }
-function applyReply(kind, id){
-  const t = $("#reply-" + kind)?.value || "";
+/* ---------- Anthropic API（使う人のキーで、ブラウザから直接） ---------- */
+const SDK_URL = "https://cdn.jsdelivr.net/npm/@anthropic-ai/sdk@0.128.0/+esm";
+const MODEL = "claude-opus-5";
+let AnthropicSDK = null, liveStream = null;
+function getKey(){ return LS.get("apikey", ""); }
+async function loadSDK(){ if (!AnthropicSDK) AnthropicSDK = (await import(SDK_URL)).default; return AnthropicSDK; }
+async function runClaude(kind, id){
+  const key = getKey(); if (!key) { go("profile"); return; }
+  const prompt = promptFor(kind, id);
+  S.flow = {...(S.flow||{}), kind, id}; S.error = ""; S.running = {kind, id, text: ""}; render();
+  let A;
+  try { A = await loadSDK(); }
+  catch(e){ S.running = null; S.error = "Claude の部品を読み込めませんでした。通信環境を確認して、もう一度押してください。"; render(); return; }
+  try{
+    const client = new A({apiKey: key, dangerouslyAllowBrowser: true});
+    liveStream = client.beta.messages.stream({
+      model: MODEL, max_tokens: 16000,
+      thinking: {type: "adaptive"},
+      output_config: {effort: kind === "draft" ? "high" : "medium"},
+      betas: ["server-side-fallback-2026-07-01"], fallbacks: "default",
+      messages: [{role: "user", content: prompt}],
+    });
+    liveStream.on("text", delta => {
+      if (!S.running) return;
+      const first = !S.running.text; S.running.text += delta;
+      const el = $("#live"); if (el) el.textContent = S.running.text.slice(-500); else if (first) render();
+    });
+    const msg = await liveStream.finalMessage();
+    liveStream = null; S.running = null;
+    if (msg.stop_reason === "refusal"){ S.error = "Claude がこの内容の作成を断りました。文字起こしやメモの内容を見直してください。"; render(); return; }
+    if (msg.stop_reason === "max_tokens"){ S.error = "答えが長すぎて途中で切れました。追加の指示に「短く」と入れて、もう一度押してください。"; render(); return; }
+    const text = msg.content.filter(b => b.type === "text").map(b => b.text).join("");
+    applyReplyText(kind, id, text);
+  }catch(e){
+    liveStream = null; S.running = null;
+    if (e instanceof A.APIUserAbortError) S.error = "止めました。";
+    else if (e instanceof A.AuthenticationError) S.error = "APIキーが正しくありません。プロフィール画面で登録し直してください。";
+    else if (e instanceof A.PermissionDeniedError) S.error = "この APIキーでは Claude を使えません。Anthropic のコンソールでキーの権限を確認してください。";
+    else if (e instanceof A.RateLimitError) S.error = "呼び出しが集中しているか、利用上限に達しました。少し時間をおいてから押してください。";
+    else if (e instanceof A.BadRequestError) S.error = /credit|balance/i.test(e.message || "") ? "API のクレジット残高が足りません。Anthropic のコンソールでクレジットを追加してください。" : "Claude に渡す内容に問題がありました：" + (e.message || "").slice(0, 160);
+    else if (e instanceof A.APIConnectionError) S.error = "Claude に接続できませんでした。通信環境を確認して、もう一度押してください。";
+    else if (e instanceof A.APIError) S.error = "Claude 側でエラーが起きました（" + (e.status || "") + "）。少し時間をおいてから押してください。";
+    else S.error = "うまくいきませんでした。もう一度押してください。";
+    render();
+  }
+}
+function saveKey(){
+  const v = ($("#pf-key")?.value || "").trim();
+  if (v && !/^sk-ant-/.test(v)){ toast("sk-ant- で始まるキーを貼ってください"); return; }
+  LS.set("apikey", v); toast(v ? "APIキーを保存しました（このブラウザの中だけ）" : "APIキーを消しました"); render();
+}
+function applyReply(kind, id){ applyReplyText(kind, id, $("#reply-" + kind)?.value || ""); }
+function applyReplyText(kind, id, t){
   S.flow = {...(S.flow||{}), kind, id}; S.reply = t; S.error = "";
   let res;
   try { res = parseReply(t); } catch(e){ S.error = "答えの形が読めませんでした。Claude の答えの { から } までを、そのまま全部貼ってください。"; render(); return; }
@@ -557,6 +636,10 @@ function bind(){
     const act = b.dataset.act;
     if (act === "flow-copy") copyText(promptFor(b.dataset.kind, b.dataset.id), "指示文をコピーしました。Claude に貼って送ってください");
     if (act === "flow-apply") applyReply(b.dataset.kind, b.dataset.id);
+    if (act === "api-run") runClaude(b.dataset.kind, b.dataset.id);
+    if (act === "api-stop") liveStream?.abort();
+    if (act === "save-key") saveKey();
+    if (act === "clear-key") { const el = $("#pf-key"); if (el) el.value = ""; saveKey(); }
     if (act === "flow-close") { S.flow = null; render(); }
     if (act === "redo") { S.redo[b.dataset.key] = true; render(); }
     if (act === "copy") { const el = $("#draft"); if (el) copyText(el.value, "コピーしました。【　】を埋めてから送ってください"); }
