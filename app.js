@@ -19,7 +19,7 @@ const S = {
   base: [], meta: null, loadErr: "",
   custom: LS.get("custom", []), status: LS.get("status", {}), analyses: LS.get("analyses", {}),
   drafts: LS.get("drafts", {}), memo: LS.get("memo", {}), profile: LS.get("profile", null),
-  current: null, tab: "B", tone: "A", instr: "", redo: {}, flow: null, reply: "", error: "", running: null,
+  current: null, tab: "B", tone: "A", instr: "", redo: {}, flow: null, reply: "", error: "", running: null, oaModels: [], modelMsg: "",
 };
 const save = k => LS.set(k, S[k]);
 
@@ -247,17 +247,38 @@ function viewProfile(){
   </div>
   <div class="row" style="margin-top:16px"><button class="btn primary" data-act="save-profile">保存する</button>
   ${S.profile ? `<button class="btn ghost" data-go="pick">案件リストへ</button>` : ""}</div></section>
-  <section class="card"><span class="eyebrow">Claude API 連携（任意）</span><h3>APIキーを登録して、ボタン1つで分析・営業文づくり</h3>
-    <p class="quiet">登録すると「Claude で分析する」「Claude で営業文を書く」ボタンが使えるようになり、コピー＆貼り付けが要らなくなります。利用料はご自身の Anthropic アカウントに請求されます（使用モデル：Claude Opus 5。目安は1回あたり十数円〜数十円／推定）。</p>
-    <ol class="quiet" style="font-size:14px;margin:8px 0;padding-left:1.3em">
+  <section class="card"><span class="eyebrow">AI 連携（任意）</span><h3>APIキーを登録して、ボタン1つで分析・営業文づくり</h3>
+    <p class="quiet">Claude（Anthropic）か Codex（OpenAI）のどちらか、または両方の APIキーを登録できます。登録すると分析・営業文づくりがボタン1つになります。利用料はそれぞれご自身のアカウントに請求されます（目安は1回あたり十数円〜数十円／推定）。</p>
+    <div class="pf" style="margin-top:10px"><label>使う AI</label><div class="seg" role="group" aria-label="使うAI">
+      <button data-act="set-provider" data-p="anthropic" aria-pressed="${provider()==="anthropic"}">Claude（Anthropic）${getKey("anthropic") ? " ✓" : ""}</button>
+      <button data-act="set-provider" data-p="openai" aria-pressed="${provider()==="openai"}">Codex（OpenAI）${getKey("openai") ? " ✓" : ""}</button>
+    </div></div>
+    ${provider() === "anthropic" ? `
+    <ol class="quiet" style="font-size:14px;margin:10px 0 8px;padding-left:1.3em">
       <li><a href="https://console.anthropic.com/" target="_blank" rel="noopener">Anthropic のコンソール</a>に登録し、クレジットを購入する</li>
       <li>「API Keys」で新しいキーを作り、<b>sk-ant-</b> から始まる文字列をコピーする</li>
-      <li>下の欄に貼って保存する</li>
+      <li>下の欄に貼って保存する（使用モデル：Claude Opus 5）</li>
     </ol>
-    <div class="row"><input type="password" id="pf-key" autocomplete="off" style="flex:1;min-width:220px" placeholder="sk-ant-..." value="${esc(getKey())}">
-      <button class="btn primary sm" data-act="save-key">保存する</button>
-      ${getKey() ? `<button class="btn ghost sm" data-act="clear-key">キーを消す</button>` : ""}</div>
-    <p class="quiet" style="font-size:13px;margin-top:8px">キーはこのブラウザの中だけに保存され、Claude（api.anthropic.com）への呼び出しにだけ使います。共用のパソコンでは登録しないでください。念のため、コンソールで月の利用上限を設定しておくのがおすすめです。</p>
+    <div class="row"><input type="password" id="pf-key" autocomplete="off" style="flex:1;min-width:220px" placeholder="sk-ant-..." value="${esc(getKey("anthropic"))}">
+      <button class="btn primary sm" data-act="save-key" data-p="anthropic">保存する</button>
+      ${getKey("anthropic") ? `<button class="btn ghost sm" data-act="clear-key" data-p="anthropic">キーを消す</button>` : ""}</div>` : `
+    <ol class="quiet" style="font-size:14px;margin:10px 0 8px;padding-left:1.3em">
+      <li><a href="https://platform.openai.com/api-keys" target="_blank" rel="noopener">OpenAI のプラットフォーム</a>に登録し、「Billing」でクレジットを購入する</li>
+      <li>「API keys」で新しいキーを作り、<b>sk-</b> から始まる文字列をコピーする</li>
+      <li>下の欄に貼って保存し、「使えるモデルを読み込む」でモデルを選ぶ</li>
+    </ol>
+    <div class="row"><input type="password" id="pf-key" autocomplete="off" style="flex:1;min-width:220px" placeholder="sk-..." value="${esc(getKey("openai"))}">
+      <button class="btn primary sm" data-act="save-key" data-p="openai">保存する</button>
+      ${getKey("openai") ? `<button class="btn ghost sm" data-act="clear-key" data-p="openai">キーを消す</button>` : ""}</div>
+    ${getKey("openai") ? `<div class="row" style="margin-top:10px">
+      <label for="oa-model" class="quiet" style="font-size:13px;font-weight:700">モデル</label>
+      <select id="oa-model" style="border:1.5px solid var(--line);border-radius:10px;background:var(--surface-2);padding:8px 10px;font:inherit;min-width:220px">
+        ${(S.oaModels.length ? S.oaModels : [LS.get("oaModel","")].filter(Boolean)).map(m => `<option value="${esc(m)}" ${m===LS.get("oaModel","")?"selected":""}>${esc(m)}</option>`).join("") || `<option value="">（まだ読み込んでいません）</option>`}
+      </select>
+      <button class="btn ghost sm" data-act="load-models">使えるモデルを読み込む</button>
+      ${S.modelMsg ? `<span class="quiet" style="font-size:13px">${esc(S.modelMsg)}</span>` : ""}
+    </div>` : ""}`}
+    <p class="quiet" style="font-size:13px;margin-top:8px">キーはこのブラウザの中だけに保存され、それぞれの API（api.anthropic.com／api.openai.com）への呼び出しにだけ使います。共用のパソコンでは登録しないでください。念のため、各コンソールで月の利用上限を設定しておくのがおすすめです。</p>
   </section>
   <section class="card"><span class="eyebrow">データの持ち運び</span><h3>バックアップと引っ越し</h3>
     <p class="quiet">選んだ案件・分析・営業文もこのブラウザに保存されています。別のパソコンに移すときや、念のための控えに使ってください。</p>
@@ -336,15 +357,15 @@ function cardJob(j){
 const API_LABEL = {axes: "分析する", ref: "再現ポイントを出す", draft: "営業文を書く", addjob: "カードを作る"};
 function flowCard(kind, id, prompt, title, doneLabel){
   const active = S.flow && S.flow.kind === kind && S.flow.id === id;
-  const hasKey = !!getKey();
+  const hasKey = hasAI();
   const run = S.running && S.running.kind === kind && S.running.id === id ? S.running : null;
   const manual = manualSteps(kind, id, prompt, doneLabel, active);
   if (!hasKey) return `<div class="flow-box">${manual}
-    <p class="quiet" style="font-size:13px;margin:10px 0 0">Anthropic の APIキーを<button class="btn ghost sm" data-go="profile">プロフィール画面</button>で登録すると、この手順がボタン1つになります。</p></div>`;
+    <p class="quiet" style="font-size:13px;margin:10px 0 0">Claude か Codex の APIキーを<button class="btn ghost sm" data-go="profile">プロフィール画面</button>で登録すると、この手順がボタン1つになります。</p></div>`;
   return `<div class="flow-box">
     <div class="row">
-      <button class="btn primary" data-act="api-run" data-kind="${kind}" data-id="${esc(id)}" ${S.running ? "disabled" : ""}>Claude で${API_LABEL[kind] || "実行する"}</button>
-      ${run ? `<span class="thinking"><span class="dot"></span>${run.text ? "書いています…" : "考えています…（30秒〜1分）"}</span><button class="btn ghost sm" data-act="api-stop">止める</button>` : `<span class="quiet" style="font-size:13px">あなたの APIキーで Claude を呼びます</span>`}
+      <button class="btn primary" data-act="api-run" data-kind="${kind}" data-id="${esc(id)}" ${S.running ? "disabled" : ""}>${PROVIDER_NAME[provider()]} で${API_LABEL[kind] || "実行する"}</button>
+      ${run ? `<span class="thinking"><span class="dot"></span>${run.text ? "書いています…" : "考えています…（30秒〜1分）"}</span><button class="btn ghost sm" data-act="api-stop">止める</button>` : `<span class="quiet" style="font-size:13px">あなたの APIキーで ${PROVIDER_NAME[provider()]}${provider()==="openai" ? "（" + esc(LS.get("oaModel","")) + "）" : ""} を呼びます</span>`}
     </div>
     ${run && run.text ? `<pre class="prompt" id="live">${esc(run.text.slice(-500))}</pre>` : ""}
     ${active && S.error ? `<p class="err">${esc(S.error)}</p>` : ""}
@@ -359,7 +380,7 @@ function manualSteps(kind, id, prompt, doneLabel, active){
       <li><b>返ってきた答えを全部コピーして、ここに貼る</b>
         <textarea id="reply-${kind}" rows="5" placeholder="Claude の答え（{ から始まる部分）をそのまま貼る">${active ? esc(S.reply) : ""}</textarea>
         <div class="row" style="margin-top:8px"><button class="btn primary" data-act="flow-apply" data-kind="${kind}" data-id="${esc(id)}">${doneLabel}</button></div>
-        ${active && S.error && !getKey() ? `<p class="err">${esc(S.error)}</p>` : ""}</li>
+        ${active && S.error && !hasAI() ? `<p class="err">${esc(S.error)}</p>` : ""}</li>
     </ol>`;
 }
 function addJobCard(){
@@ -536,56 +557,128 @@ async function copyText(t, okMsg){
   try { await navigator.clipboard.writeText(t); toast(okMsg); }
   catch(e){ const ta = document.createElement("textarea"); ta.value = t; document.body.appendChild(ta); ta.select(); try { document.execCommand("copy"); toast(okMsg); } catch(_){ toast("コピーできませんでした。中身を見るから手でコピーしてください"); } ta.remove(); }
 }
-/* ---------- Anthropic API（使う人のキーで、ブラウザから直接） ---------- */
-const SDK_URL = "https://cdn.jsdelivr.net/npm/@anthropic-ai/sdk@0.128.0/+esm";
-const MODEL = "claude-opus-5";
-let AnthropicSDK = null, liveStream = null;
-function getKey(){ return LS.get("apikey", ""); }
-async function loadSDK(){ if (!AnthropicSDK) AnthropicSDK = (await import(SDK_URL)).default; return AnthropicSDK; }
-async function runClaude(kind, id){
-  const key = getKey(); if (!key) { go("profile"); return; }
+/* ---------- AI 連携（使う人のキーで、ブラウザから直接） ---------- */
+const ANTHROPIC_SDK_URL = "https://cdn.jsdelivr.net/npm/@anthropic-ai/sdk@0.128.0/+esm";
+const OPENAI_SDK_URL = "https://cdn.jsdelivr.net/npm/openai@7.23.0/+esm";
+const CLAUDE_MODEL = "claude-opus-5";
+const PROVIDER_NAME = {anthropic: "Claude", openai: "Codex"};
+let AnthropicSDK = null, OpenAISDK = null, liveStream = null, liveAbort = null;
+function getKey(p){ return LS.get(p === "openai" ? "openaiKey" : "apikey", ""); }
+function provider(){
+  const p = LS.get("provider", "");
+  if (p) return p;
+  return getKey("anthropic") ? "anthropic" : getKey("openai") ? "openai" : "anthropic";
+}
+const hasAI = () => !!getKey(provider()) && (provider() !== "openai" || !!LS.get("oaModel", ""));
+async function loadAnthropic(){ if (!AnthropicSDK) AnthropicSDK = (await import(ANTHROPIC_SDK_URL)).default; return AnthropicSDK; }
+async function loadOpenAI(){ if (!OpenAISDK) OpenAISDK = (await import(OPENAI_SDK_URL)).default; return OpenAISDK; }
+
+function errorText(e, A, p){
+  const name = PROVIDER_NAME[p];
+  if (e instanceof A.APIUserAbortError || e?.name === "AbortError") return "止めました。";
+  if (e instanceof A.AuthenticationError) return "APIキーが正しくありません。プロフィール画面で登録し直してください。";
+  if (e instanceof A.PermissionDeniedError) return `この APIキーでは ${name} を使えません。コンソールでキーの権限を確認してください。`;
+  if (e instanceof A.NotFoundError) return p === "openai" ? "選んだモデルがこの APIキーでは使えません。プロフィール画面で「使えるモデルを読み込む」から選び直してください。" : "モデルが見つかりませんでした。";
+  if (e instanceof A.RateLimitError) return /insufficient_quota|quota|billing/i.test((e.code || "") + (e.message || "")) ? "API のクレジット残高が足りません。コンソールでクレジットを追加してください。" : "呼び出しが集中しているか、利用上限に達しました。少し時間をおいてから押してください。";
+  if (e instanceof A.BadRequestError) return /credit|balance|quota|billing/i.test(e.message || "") ? "API のクレジット残高が足りません。コンソールでクレジットを追加してください。" : `${name} に渡す内容に問題がありました：` + (e.message || "").slice(0, 160);
+  if (e instanceof A.APIConnectionError) return `${name} に接続できませんでした。通信環境を確認して、もう一度押してください。`;
+  if (e instanceof A.APIError) return `${name} 側でエラーが起きました（${e.status || ""}）。少し時間をおいてから押してください。`;
+  return "うまくいきませんでした。もう一度押してください。";
+}
+function onDelta(delta){
+  if (!S.running) return;
+  const first = !S.running.text; S.running.text += delta;
+  const el = $("#live"); if (el) el.textContent = S.running.text.slice(-500); else if (first) render();
+}
+async function runAI(kind, id){
+  const p = provider();
+  if (!hasAI()) { go("profile"); return; }
   const prompt = promptFor(kind, id);
   S.flow = {...(S.flow||{}), kind, id}; S.error = ""; S.running = {kind, id, text: ""}; render();
   let A;
-  try { A = await loadSDK(); }
-  catch(e){ S.running = null; S.error = "Claude の部品を読み込めませんでした。通信環境を確認して、もう一度押してください。"; render(); return; }
+  try { A = p === "openai" ? await loadOpenAI() : await loadAnthropic(); }
+  catch(e){ S.running = null; S.error = "AI の部品を読み込めませんでした。通信環境を確認して、もう一度押してください。"; render(); return; }
   try{
-    const client = new A({apiKey: key, dangerouslyAllowBrowser: true});
-    liveStream = client.beta.messages.stream({
-      model: MODEL, max_tokens: 16000,
-      thinking: {type: "adaptive"},
-      output_config: {effort: kind === "draft" ? "high" : "medium"},
-      betas: ["server-side-fallback-2026-07-01"], fallbacks: "default",
-      messages: [{role: "user", content: prompt}],
-    });
-    liveStream.on("text", delta => {
-      if (!S.running) return;
-      const first = !S.running.text; S.running.text += delta;
-      const el = $("#live"); if (el) el.textContent = S.running.text.slice(-500); else if (first) render();
-    });
-    const msg = await liveStream.finalMessage();
-    liveStream = null; S.running = null;
-    if (msg.stop_reason === "refusal"){ S.error = "Claude がこの内容の作成を断りました。文字起こしやメモの内容を見直してください。"; render(); return; }
-    if (msg.stop_reason === "max_tokens"){ S.error = "答えが長すぎて途中で切れました。追加の指示に「短く」と入れて、もう一度押してください。"; render(); return; }
-    const text = msg.content.filter(b => b.type === "text").map(b => b.text).join("");
+    let text = "";
+    if (p === "openai"){
+      const client = new A({apiKey: getKey("openai"), dangerouslyAllowBrowser: true});
+      liveAbort = new AbortController();
+      const stream = await client.responses.create({model: LS.get("oaModel", ""), input: prompt, stream: true}, {signal: liveAbort.signal});
+      let failed = "";
+      for await (const ev of stream){
+        if (ev.type === "response.output_text.delta") { text += ev.delta; onDelta(ev.delta); }
+        else if (ev.type === "response.failed" || ev.type === "error") failed = ev.response?.error?.message || ev.message || "failed";
+        else if (ev.type === "response.incomplete") failed = "incomplete";
+      }
+      liveAbort = null; S.running = null;
+      if (failed === "incomplete"){ S.error = "答えが長すぎて途中で切れました。追加の指示に「短く」と入れて、もう一度押してください。"; render(); return; }
+      if (failed){ S.error = "Codex 側で処理に失敗しました：" + failed.slice(0, 160); render(); return; }
+    } else {
+      const client = new A({apiKey: getKey("anthropic"), dangerouslyAllowBrowser: true});
+      liveStream = client.beta.messages.stream({
+        model: CLAUDE_MODEL, max_tokens: 16000,
+        thinking: {type: "adaptive"},
+        output_config: {effort: kind === "draft" ? "high" : "medium"},
+        betas: ["server-side-fallback-2026-07-01"], fallbacks: "default",
+        messages: [{role: "user", content: prompt}],
+      });
+      liveStream.on("text", onDelta);
+      const msg = await liveStream.finalMessage();
+      liveStream = null; S.running = null;
+      if (msg.stop_reason === "refusal"){ S.error = "Claude がこの内容の作成を断りました。文字起こしやメモの内容を見直してください。"; render(); return; }
+      if (msg.stop_reason === "max_tokens"){ S.error = "答えが長すぎて途中で切れました。追加の指示に「短く」と入れて、もう一度押してください。"; render(); return; }
+      text = msg.content.filter(b => b.type === "text").map(b => b.text).join("");
+    }
     applyReplyText(kind, id, text);
   }catch(e){
-    liveStream = null; S.running = null;
-    if (e instanceof A.APIUserAbortError) S.error = "止めました。";
-    else if (e instanceof A.AuthenticationError) S.error = "APIキーが正しくありません。プロフィール画面で登録し直してください。";
-    else if (e instanceof A.PermissionDeniedError) S.error = "この APIキーでは Claude を使えません。Anthropic のコンソールでキーの権限を確認してください。";
-    else if (e instanceof A.RateLimitError) S.error = "呼び出しが集中しているか、利用上限に達しました。少し時間をおいてから押してください。";
-    else if (e instanceof A.BadRequestError) S.error = /credit|balance/i.test(e.message || "") ? "API のクレジット残高が足りません。Anthropic のコンソールでクレジットを追加してください。" : "Claude に渡す内容に問題がありました：" + (e.message || "").slice(0, 160);
-    else if (e instanceof A.APIConnectionError) S.error = "Claude に接続できませんでした。通信環境を確認して、もう一度押してください。";
-    else if (e instanceof A.APIError) S.error = "Claude 側でエラーが起きました（" + (e.status || "") + "）。少し時間をおいてから押してください。";
-    else S.error = "うまくいきませんでした。もう一度押してください。";
+    liveStream = null; liveAbort = null; S.running = null;
+    S.error = errorText(e, A, p);
+    /* OpenAI は、キー違い・残高不足などのエラー応答にブラウザ向けの許可ヘッダーを付けないため、
+       ブラウザからは「接続エラー」に見える。モデル一覧（こちらは許可ヘッダーあり）で原因を切り分ける。 */
+    if (p === "openai" && e instanceof A.APIConnectionError){
+      try {
+        const c = new A({apiKey: getKey("openai"), dangerouslyAllowBrowser: true, maxRetries: 0});
+        const ids = []; for await (const m of c.models.list()) ids.push(m.id);
+        S.error = ids.includes(LS.get("oaModel", ""))
+          ? "Codex に断られました。API のクレジット残高か、組織の利用上限を確認してください（通信環境の問題の場合もあります）。"
+          : "選んだモデルがこの APIキーでは使えません。プロフィール画面で「使えるモデルを読み込む」から選び直してください。";
+      } catch(e2){ if (e2 instanceof A.AuthenticationError) S.error = "APIキーが正しくありません。プロフィール画面で登録し直してください。"; }
+    }
     render();
   }
 }
-function saveKey(){
+function stopAI(){ liveStream?.abort(); liveAbort?.abort(); }
+function saveKey(p){
   const v = ($("#pf-key")?.value || "").trim();
-  if (v && !/^sk-ant-/.test(v)){ toast("sk-ant- で始まるキーを貼ってください"); return; }
-  LS.set("apikey", v); toast(v ? "APIキーを保存しました（このブラウザの中だけ）" : "APIキーを消しました"); render();
+  if (v && p === "anthropic" && !/^sk-ant-/.test(v)){ toast("sk-ant- で始まるキーを貼ってください"); return; }
+  if (v && p === "openai" && !/^sk-/.test(v)){ toast("sk- で始まるキーを貼ってください"); return; }
+  LS.set(p === "openai" ? "openaiKey" : "apikey", v);
+  if (v) LS.set("provider", p);
+  if (!v && p === "openai"){ LS.set("oaModel", ""); S.oaModels = []; }
+  toast(v ? "APIキーを保存しました（このブラウザの中だけ）" : "APIキーを消しました");
+  render();
+  if (v && p === "openai" && !LS.get("oaModel", "")) loadModels();
+}
+/* OpenAI：このキーで使えるモデルを読み込み、Codex 系を優先して選ぶ */
+async function loadModels(){
+  S.modelMsg = "読み込んでいます…"; render();
+  try{
+    const A = await loadOpenAI();
+    const client = new A({apiKey: getKey("openai"), dangerouslyAllowBrowser: true});
+    const ids = [];
+    for await (const m of client.models.list()) ids.push(m.id);
+    const usable = ids.filter(id => /^(gpt-|o\d)/.test(id) && !/(audio|realtime|tts|transcribe|image|search|embedding|instruct|mini-tts)/.test(id)).sort().reverse();
+    const codex = usable.filter(id => id.includes("codex"));
+    S.oaModels = [...codex, ...usable.filter(id => !id.includes("codex"))];
+    if (!S.oaModels.length){ S.modelMsg = "使えるモデルが見つかりませんでした。"; render(); return; }
+    const cur = LS.get("oaModel", "");
+    if (!cur || !S.oaModels.includes(cur)) LS.set("oaModel", S.oaModels[0]);
+    S.modelMsg = `${S.oaModels.length}件。Codex 系を上に並べています。`;
+  }catch(e){
+    const A = OpenAISDK;
+    S.modelMsg = A ? errorText(e, A, "openai") : "読み込めませんでした。通信環境を確認してください。";
+  }
+  render();
 }
 function applyReply(kind, id){ applyReplyText(kind, id, $("#reply-" + kind)?.value || ""); }
 function applyReplyText(kind, id, t){
@@ -615,6 +708,7 @@ function applyReplyText(kind, id, t){
 }
 function bind(){
   document.querySelectorAll("[data-filter]").forEach(b => b.onclick = () => { S.filter = b.dataset.filter; render(); });
+  const oam = $("#oa-model"); if (oam) oam.onchange = () => { LS.set("oaModel", oam.value); toast("モデルを " + oam.value + " にしました"); };
   document.querySelectorAll("[data-media]").forEach(b => b.onclick = () => { S.media = b.dataset.media; render(); });
   document.querySelectorAll("[data-status]").forEach(b => b.onclick = () => setStatus(b.dataset.id, b.dataset.status));
   document.querySelectorAll("[data-go]").forEach(b => b.onclick = () => go(b.dataset.go));
@@ -636,10 +730,12 @@ function bind(){
     const act = b.dataset.act;
     if (act === "flow-copy") copyText(promptFor(b.dataset.kind, b.dataset.id), "指示文をコピーしました。Claude に貼って送ってください");
     if (act === "flow-apply") applyReply(b.dataset.kind, b.dataset.id);
-    if (act === "api-run") runClaude(b.dataset.kind, b.dataset.id);
-    if (act === "api-stop") liveStream?.abort();
-    if (act === "save-key") saveKey();
-    if (act === "clear-key") { const el = $("#pf-key"); if (el) el.value = ""; saveKey(); }
+    if (act === "api-run") runAI(b.dataset.kind, b.dataset.id);
+    if (act === "api-stop") stopAI();
+    if (act === "save-key") saveKey(b.dataset.p);
+    if (act === "clear-key") { const el = $("#pf-key"); if (el) el.value = ""; saveKey(b.dataset.p); }
+    if (act === "set-provider") { LS.set("provider", b.dataset.p); S.modelMsg = ""; render(); }
+    if (act === "load-models") loadModels();
     if (act === "flow-close") { S.flow = null; render(); }
     if (act === "redo") { S.redo[b.dataset.key] = true; render(); }
     if (act === "copy") { const el = $("#draft"); if (el) copyText(el.value, "コピーしました。【　】を埋めてから送ってください"); }
