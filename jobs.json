@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-05 00:23",
+ "updatedAt": "2026-10-05 08:39",
  "autoUpdate": "毎日 朝6時ごろ（クラウドワークス・ランサーズの新着を自動取得）",
  "collected": 633,
  "bySource": {
@@ -802,7 +802,49 @@
    "firstSeen": "2026-10-05"
   },
   {
-   "id": "cw-13504574",
+   "id": "cw-13504785",
+   "auto": true,
+   "media": "クラウドワークス",
+   "group": "B",
+   "company": "クラウドワークスの依頼主",
+   "title": "【1本 18,000〜35,000円】旅系YouTubeチャンネルの動画編集者募集【長期継続・昇給あり】",
+   "tanka": "契約金額は相談",
+   "summary": "はじめまして。 YouTubeチャンネル運営をしている辻と申します。 立ち上げから半年で登録者3万人を突破した旅系YouTubeチャンネル「ココロ旅道中」の動画編集を、継続してお願いできる方を募集しています。 ▼まずはこ…",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": 0,
+   "deadline": "10/19",
+   "applyUrl": "https://crowdworks.jp/public/jobs/13504785",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "2026-10-05",
+   "channel": null,
+   "order": 1000,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "cw-13489952",
+   "auto": true,
+   "media": "クラウドワークス",
+   "group": "B",
+   "company": "クラウドワークスの依頼主",
+   "title": "【20代活躍】美容・ライフスタイル系Instagramのリール動画編集スタッフ募集！マニュアル完備",
+   "tanka": "30,000円〜50,000円（固定報酬）",
+   "summary": "✨ ご覧いただきありがとうございます ✨ 私たちは、20代のメンバーが集まって、Instagramで「最新の美容トレンドや、毎日がときめくライフスタイル情報」を発信する可愛い動画メディアを運営しています。 この度、アカウ…",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": 5,
+   "deadline": "10/10",
+   "applyUrl": "https://crowdworks.jp/public/jobs/13489952",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "2026-10-05",
+   "channel": null,
+   "order": 1001,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "cw-13497638",
    "auto": true,
    "media": "クラウドワークス",
    "group": "B",
@@ -813,13 +855,55 @@
    "requirements": [],
    "formQuestions": [],
    "refVideos": [],
-   "applicants": 0,
-   "deadline": "10/6",
-   "applyUrl": "https://crowdworks.jp/public/jobs/13504574",
+   "applicants": 13,
+   "deadline": "10/5",
+   "applyUrl": "https://crowdworks.jp/public/jobs/13497638",
    "fetchedAt": "2026-10-05",
    "releasedAt": "2026-10-05",
    "channel": null,
-   "order": 1000,
+   "order": 1002,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "cw-13504663",
+   "auto": true,
+   "media": "クラウドワークス",
+   "group": "B",
+   "company": "クラウドワークスの依頼主",
+   "title": "ビジネス系(投資系)の動画編集の依頼です。",
+   "tanka": "30,000円〜50,000円（固定報酬）",
+   "summary": "書き方の例） 【 依頼内容 】 投資系（株投資に関係する）の動画作成をお願いします。 司会（1名）とゲスト（1名-2名）でのトーク 【 作業ボリューム 】 今回は月1本、映像尺は40分-50分（素材尺1時間程度） ...",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": 7,
+   "deadline": "10/13",
+   "applyUrl": "https://crowdworks.jp/public/jobs/13504663",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "2026-10-05",
+   "channel": null,
+   "order": 1003,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "cw-13504729",
+   "auto": true,
+   "media": "クラウドワークス",
+   "group": "B",
+   "company": "クラウドワークスの依頼主",
+   "title": "【顔出し必須】家族や友だちとの写真・動画をアプリ「Dailies」に送って、感想を聞かせてください(1グループ3,000円)",
+   "tanka": "5,000円〜10,000円（固定報酬）",
+   "summary": "はじめまして、Dailies です！ ご覧いただき、ありがとうございます。 【Dailies とは】 家族や友だちが写った写真・動画をみんなで送るだけで、その思い出が短い動画に自動でまとまるアプリです。iPhoneでもA…",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": 1,
+   "deadline": "10/19",
+   "applyUrl": "https://crowdworks.jp/public/jobs/13504729",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "2026-10-05",
+   "channel": null,
+   "order": 1004,
    "firstSeen": "2026-10-05"
   },
   {
@@ -834,34 +918,13 @@
    "requirements": [],
    "formQuestions": [],
    "refVideos": [],
-   "applicants": 31,
+   "applicants": 37,
    "deadline": "10/9",
    "applyUrl": "https://crowdworks.jp/public/jobs/13457828",
    "fetchedAt": "2026-10-05",
    "releasedAt": "2026-10-04",
    "channel": null,
-   "order": 1001,
-   "firstSeen": "2026-10-05"
-  },
-  {
-   "id": "cw-13504429",
-   "auto": true,
-   "media": "クラウドワークス",
-   "group": "B",
-   "company": "クラウドワークスの依頼主",
-   "title": "💄【美容好き歓迎】Instagramショート動画制作スタッフ募集！",
-   "tanka": "5,000円〜10,000円（固定報酬）",
-   "summary": "Instagramショート動画制作スタッフ募集！ Instagramショート動画の制作を一緒にお手伝いしてくれる方を募集しています！ 「美容やスキンケアに関する発信をしてみたい」 「コスメやメイク、美容に関する動画を見る…",
-   "requirements": [],
-   "formQuestions": [],
-   "refVideos": [],
-   "applicants": 6,
-   "deadline": "10/9",
-   "applyUrl": "https://crowdworks.jp/public/jobs/13504429",
-   "fetchedAt": "2026-10-05",
-   "releasedAt": "2026-10-04",
-   "channel": null,
-   "order": 1002,
+   "order": 1005,
    "firstSeen": "2026-10-05"
   },
   {
@@ -876,13 +939,13 @@
    "requirements": [],
    "formQuestions": [],
    "refVideos": [],
-   "applicants": 53,
+   "applicants": 56,
    "deadline": "10/9",
    "applyUrl": "https://crowdworks.jp/public/jobs/13457930",
    "fetchedAt": "2026-10-05",
    "releasedAt": "2026-10-04",
    "channel": null,
-   "order": 1003,
+   "order": 1006,
    "firstSeen": "2026-10-05"
   },
   {
@@ -897,13 +960,13 @@
    "requirements": [],
    "formQuestions": [],
    "refVideos": [],
-   "applicants": 10,
+   "applicants": 17,
    "deadline": "10/9",
    "applyUrl": "https://crowdworks.jp/public/jobs/13504401",
    "fetchedAt": "2026-10-05",
    "releasedAt": "2026-10-04",
    "channel": null,
-   "order": 1004,
+   "order": 1007,
    "firstSeen": "2026-10-05"
   },
   {
@@ -918,13 +981,13 @@
    "requirements": [],
    "formQuestions": [],
    "refVideos": [],
-   "applicants": 28,
+   "applicants": 29,
    "deadline": "10/9",
    "applyUrl": "https://crowdworks.jp/public/jobs/13455448",
    "fetchedAt": "2026-10-05",
    "releasedAt": "2026-10-04",
    "channel": null,
-   "order": 1005,
+   "order": 1008,
    "firstSeen": "2026-10-05"
   },
   {
@@ -939,13 +1002,13 @@
    "requirements": [],
    "formQuestions": [],
    "refVideos": [],
-   "applicants": 44,
+   "applicants": 47,
    "deadline": "10/11",
    "applyUrl": "https://crowdworks.jp/public/jobs/13448535",
    "fetchedAt": "2026-10-05",
    "releasedAt": "2026-10-04",
    "channel": null,
-   "order": 1006,
+   "order": 1009,
    "firstSeen": "2026-10-05"
   },
   {
@@ -960,13 +1023,13 @@
    "requirements": [],
    "formQuestions": [],
    "refVideos": [],
-   "applicants": 11,
+   "applicants": 14,
    "deadline": "10/9",
    "applyUrl": "https://crowdworks.jp/public/jobs/13479685",
    "fetchedAt": "2026-10-05",
    "releasedAt": "2026-10-04",
    "channel": null,
-   "order": 1007,
+   "order": 1010,
    "firstSeen": "2026-10-05"
   },
   {
@@ -981,13 +1044,13 @@
    "requirements": [],
    "formQuestions": [],
    "refVideos": [],
-   "applicants": 33,
+   "applicants": 35,
    "deadline": "10/11",
    "applyUrl": "https://crowdworks.jp/public/jobs/13407063",
    "fetchedAt": "2026-10-05",
    "releasedAt": "2026-10-04",
    "channel": null,
-   "order": 1008,
+   "order": 1011,
    "firstSeen": "2026-10-05"
   },
   {
@@ -1002,13 +1065,13 @@
    "requirements": [],
    "formQuestions": [],
    "refVideos": [],
-   "applicants": 16,
+   "applicants": 19,
    "deadline": "10/9",
    "applyUrl": "https://crowdworks.jp/public/jobs/13504337",
    "fetchedAt": "2026-10-05",
    "releasedAt": "2026-10-04",
    "channel": null,
-   "order": 1009,
+   "order": 1012,
    "firstSeen": "2026-10-05"
   },
   {
@@ -1023,13 +1086,13 @@
    "requirements": [],
    "formQuestions": [],
    "refVideos": [],
-   "applicants": 2,
+   "applicants": 4,
    "deadline": "10/11",
    "applyUrl": "https://crowdworks.jp/public/jobs/13504333",
    "fetchedAt": "2026-10-05",
    "releasedAt": "2026-10-04",
    "channel": null,
-   "order": 1010,
+   "order": 1013,
    "firstSeen": "2026-10-05"
   },
   {
@@ -1044,13 +1107,13 @@
    "requirements": [],
    "formQuestions": [],
    "refVideos": [],
-   "applicants": 3,
+   "applicants": 4,
    "deadline": "10/18",
    "applyUrl": "https://crowdworks.jp/public/jobs/13504240",
    "fetchedAt": "2026-10-05",
    "releasedAt": "2026-10-04",
    "channel": null,
-   "order": 1011,
+   "order": 1014,
    "firstSeen": "2026-10-05"
   },
   {
@@ -1065,13 +1128,13 @@
    "requirements": [],
    "formQuestions": [],
    "refVideos": [],
-   "applicants": 2,
+   "applicants": 3,
    "deadline": "10/18",
    "applyUrl": "https://crowdworks.jp/public/jobs/13504217",
    "fetchedAt": "2026-10-05",
    "releasedAt": "2026-10-04",
    "channel": null,
-   "order": 1012,
+   "order": 1015,
    "firstSeen": "2026-10-05"
   },
   {
@@ -1092,7 +1155,7 @@
    "fetchedAt": "2026-10-05",
    "releasedAt": "2026-10-04",
    "channel": null,
-   "order": 1013,
+   "order": 1016,
    "firstSeen": "2026-10-05"
   },
   {
@@ -1113,7 +1176,7 @@
    "fetchedAt": "2026-10-05",
    "releasedAt": "2026-10-04",
    "channel": null,
-   "order": 1014,
+   "order": 1017,
    "firstSeen": "2026-10-05"
   },
   {
@@ -1128,13 +1191,13 @@
    "requirements": [],
    "formQuestions": [],
    "refVideos": [],
-   "applicants": 18,
+   "applicants": 19,
    "deadline": "10/10",
    "applyUrl": "https://crowdworks.jp/public/jobs/13504133",
    "fetchedAt": "2026-10-05",
    "releasedAt": "2026-10-04",
    "channel": null,
-   "order": 1015,
+   "order": 1018,
    "firstSeen": "2026-10-05"
   },
   {
@@ -1149,13 +1212,13 @@
    "requirements": [],
    "formQuestions": [],
    "refVideos": [],
-   "applicants": 12,
+   "applicants": 13,
    "deadline": "10/8",
    "applyUrl": "https://crowdworks.jp/public/jobs/13504039",
    "fetchedAt": "2026-10-05",
    "releasedAt": "2026-10-04",
    "channel": null,
-   "order": 1016,
+   "order": 1019,
    "firstSeen": "2026-10-05"
   },
   {
@@ -1170,13 +1233,13 @@
    "requirements": [],
    "formQuestions": [],
    "refVideos": [],
-   "applicants": 27,
+   "applicants": 29,
    "deadline": "10/11",
    "applyUrl": "https://crowdworks.jp/public/jobs/13397812",
    "fetchedAt": "2026-10-05",
    "releasedAt": "2026-10-04",
    "channel": null,
-   "order": 1017,
+   "order": 1020,
    "firstSeen": "2026-10-05"
   },
   {
@@ -1191,13 +1254,13 @@
    "requirements": [],
    "formQuestions": [],
    "refVideos": [],
-   "applicants": 5,
+   "applicants": 8,
    "deadline": "10/18",
    "applyUrl": "https://crowdworks.jp/public/jobs/13503998",
    "fetchedAt": "2026-10-05",
    "releasedAt": "2026-10-04",
    "channel": null,
-   "order": 1018,
+   "order": 1021,
    "firstSeen": "2026-10-05"
   },
   {
@@ -1212,13 +1275,13 @@
    "requirements": [],
    "formQuestions": [],
    "refVideos": [],
-   "applicants": 42,
+   "applicants": 44,
    "deadline": "10/11",
    "applyUrl": "https://crowdworks.jp/public/jobs/13481562",
    "fetchedAt": "2026-10-05",
    "releasedAt": "2026-10-04",
    "channel": null,
-   "order": 1019,
+   "order": 1022,
    "firstSeen": "2026-10-05"
   },
   {
@@ -1233,13 +1296,13 @@
    "requirements": [],
    "formQuestions": [],
    "refVideos": [],
-   "applicants": 9,
+   "applicants": 11,
    "deadline": "10/9",
    "applyUrl": "https://crowdworks.jp/public/jobs/13503880",
    "fetchedAt": "2026-10-05",
    "releasedAt": "2026-10-04",
    "channel": null,
-   "order": 1020,
+   "order": 1023,
    "firstSeen": "2026-10-05"
   },
   {
@@ -1254,13 +1317,13 @@
    "requirements": [],
    "formQuestions": [],
    "refVideos": [],
-   "applicants": 14,
+   "applicants": 15,
    "deadline": "10/11",
    "applyUrl": "https://crowdworks.jp/public/jobs/13503747",
    "fetchedAt": "2026-10-05",
    "releasedAt": "2026-10-04",
    "channel": null,
-   "order": 1021,
+   "order": 1024,
    "firstSeen": "2026-10-05"
   },
   {
@@ -1281,133 +1344,7 @@
    "fetchedAt": "2026-10-05",
    "releasedAt": "2026-10-04",
    "channel": null,
-   "order": 1022,
-   "firstSeen": "2026-10-05"
-  },
-  {
-   "id": "cw-13503701",
-   "auto": true,
-   "media": "クラウドワークス",
-   "group": "B",
-   "company": "クラウドワークスの依頼主",
-   "title": "【恋愛系Instagram｜トークリールの編集をお任せしたい方を募集します】",
-   "tanka": "10,000円〜30,000円（固定報酬）",
-   "summary": "━━━━━━━━━━━━━━━━ ■ はじめに ━━━━━━━━━━━━━━━━ ご覧いただきありがとうございます。 恋愛に関するノウハウ・ティップス・アドバイスを発信しているInstagramアカウントを運営しており.…",
-   "requirements": [],
-   "formQuestions": [],
-   "refVideos": [],
-   "applicants": 20,
-   "deadline": "10/18",
-   "applyUrl": "https://crowdworks.jp/public/jobs/13503701",
-   "fetchedAt": "2026-10-05",
-   "releasedAt": "2026-10-04",
-   "channel": null,
-   "order": 1023,
-   "firstSeen": "2026-10-05"
-  },
-  {
-   "id": "cw-13503692",
-   "auto": true,
-   "media": "クラウドワークス",
-   "group": "B",
-   "company": "クラウドワークスの依頼主",
-   "title": "🔰低単価案件にサヨナラ🔰動画編集スキルを活かしてSNS運用の世界へ！パートナー募集",
-   "tanka": "30,000円〜50,000円（固定報酬）",
-   "summary": "低単価のカット・テロップ作業に追われ、もっとクリエイティブな仕事がしたいと悩んでいませんか？あなたの動画編集スキルは、SNS運用の世界で輝く大きな武器になります。 未経験でも「学びながら実践」できる環境で、あなたのスキル…",
-   "requirements": [],
-   "formQuestions": [],
-   "refVideos": [],
-   "applicants": 1,
-   "deadline": "10/18",
-   "applyUrl": "https://crowdworks.jp/public/jobs/13503692",
-   "fetchedAt": "2026-10-05",
-   "releasedAt": "2026-10-04",
-   "channel": null,
-   "order": 1024,
-   "firstSeen": "2026-10-05"
-  },
-  {
-   "id": "cw-13472598",
-   "auto": true,
-   "media": "クラウドワークス",
-   "group": "B",
-   "company": "クラウドワークスの依頼主",
-   "title": "20代に気になる美容を届ける✨｜美容クリニックのSNSショート動画編集",
-   "tanka": "10,000円〜30,000円（固定報酬）",
-   "summary": "ご覧いただきありがとうございます！ InstagramやTikTokで美容情報をチェックしたり、気になる施術について調べたりすることが好きな方へ。 今回お願いするのは、美容クリニックの施術や雰囲気、人気メニューなどを紹介…",
-   "requirements": [],
-   "formQuestions": [],
-   "refVideos": [],
-   "applicants": 25,
-   "deadline": "10/11",
-   "applyUrl": "https://crowdworks.jp/public/jobs/13472598",
-   "fetchedAt": "2026-10-05",
-   "releasedAt": "2026-10-04",
-   "channel": null,
    "order": 1025,
-   "firstSeen": "2026-10-05"
-  },
-  {
-   "id": "cw-13503549",
-   "auto": true,
-   "media": "クラウドワークス",
-   "group": "B",
-   "company": "クラウドワークスの依頼主",
-   "title": "【動画編集経験者募集・マニュアル作成あり】海外の反応系YouTube動画編集｜15～20分",
-   "tanka": "10,000円〜30,000円（固定報酬）",
-   "summary": "ご覧いただきありがとうございます。 海外の反応系YouTubeチャンネルの新規立ち上げのため、動画編集者の方を募集します。 こちらから台本と元動画のURLをお渡ししますので、台本に沿って15～20分程度の動画を編集してい…",
-   "requirements": [],
-   "formQuestions": [],
-   "refVideos": [],
-   "applicants": 7,
-   "deadline": "10/12",
-   "applyUrl": "https://crowdworks.jp/public/jobs/13503549",
-   "fetchedAt": "2026-10-05",
-   "releasedAt": "2026-10-04",
-   "channel": null,
-   "order": 1026,
-   "firstSeen": "2026-10-05"
-  },
-  {
-   "id": "cw-13503536",
-   "auto": true,
-   "media": "クラウドワークス",
-   "group": "B",
-   "company": "クラウドワークスの依頼主",
-   "title": "動画編集者募集｜企業紹介動画の制作業務",
-   "tanka": "契約金額は相談",
-   "summary": "はじめまして！ 企業サービス紹介動画の編集をお手伝いいただける方を募集しております。 【業務内容】 ・15〜60秒の動画編集 ・カット／テロップ／BGM挿入 ・色味や簡単な演出調整 ※素材はすべてこちらで用意いたし...",
-   "requirements": [],
-   "formQuestions": [],
-   "refVideos": [],
-   "applicants": 17,
-   "deadline": "10/9",
-   "applyUrl": "https://crowdworks.jp/public/jobs/13503536",
-   "fetchedAt": "2026-10-05",
-   "releasedAt": "2026-10-04",
-   "channel": null,
-   "order": 1027,
-   "firstSeen": "2026-10-05"
-  },
-  {
-   "id": "cw-13503501",
-   "auto": true,
-   "media": "クラウドワークス",
-   "group": "B",
-   "company": "クラウドワークスの依頼主",
-   "title": "【継続前提】レシピ動画の動画編集をしてくださる方を募集(YouTube・10分前後)",
-   "tanka": "10,000円〜30,000円（固定報酬）",
-   "summary": "はじめまして。ご覧いただきありがとうございます。 プロの料理人が家庭で作れるレシピを紹介するYouTube動画の編集をお願いできる方を募集します。 まずは1本お願いし、双方問題なければ継続してご依頼したいと考えています。…",
-   "requirements": [],
-   "formQuestions": [],
-   "refVideos": [],
-   "applicants": 12,
-   "deadline": "10/8",
-   "applyUrl": "https://crowdworks.jp/public/jobs/13503501",
-   "fetchedAt": "2026-10-05",
-   "releasedAt": "2026-10-04",
-   "channel": null,
-   "order": 1028,
    "firstSeen": "2026-10-05"
   },
   {
@@ -1428,7 +1365,7 @@
    "fetchedAt": "2026-10-05",
    "releasedAt": "",
    "channel": null,
-   "order": 1029,
+   "order": 1026,
    "firstSeen": "2026-10-05"
   },
   {
@@ -1449,7 +1386,7 @@
    "fetchedAt": "2026-10-05",
    "releasedAt": "",
    "channel": null,
-   "order": 1030,
+   "order": 1027,
    "firstSeen": "2026-10-05"
   },
   {
@@ -1470,7 +1407,7 @@
    "fetchedAt": "2026-10-05",
    "releasedAt": "",
    "channel": null,
-   "order": 1031,
+   "order": 1028,
    "firstSeen": "2026-10-05"
   },
   {
@@ -1491,7 +1428,7 @@
    "fetchedAt": "2026-10-05",
    "releasedAt": "",
    "channel": null,
-   "order": 1032,
+   "order": 1029,
    "firstSeen": "2026-10-05"
   },
   {
@@ -1512,7 +1449,7 @@
    "fetchedAt": "2026-10-05",
    "releasedAt": "",
    "channel": null,
-   "order": 1033,
+   "order": 1030,
    "firstSeen": "2026-10-05"
   },
   {
@@ -1537,7 +1474,7 @@
    "fetchedAt": "2026-10-05",
    "releasedAt": "",
    "channel": null,
-   "order": 1034,
+   "order": 1031,
    "firstSeen": "2026-10-05"
   },
   {
@@ -1558,7 +1495,7 @@
    "fetchedAt": "2026-10-05",
    "releasedAt": "",
    "channel": null,
-   "order": 1035,
+   "order": 1032,
    "firstSeen": "2026-10-05"
   },
   {
@@ -1579,7 +1516,7 @@
    "fetchedAt": "2026-10-05",
    "releasedAt": "",
    "channel": null,
-   "order": 1036,
+   "order": 1033,
    "firstSeen": "2026-10-05"
   },
   {
@@ -1600,7 +1537,7 @@
    "fetchedAt": "2026-10-05",
    "releasedAt": "",
    "channel": null,
-   "order": 1037,
+   "order": 1034,
    "firstSeen": "2026-10-05"
   },
   {
@@ -1621,7 +1558,7 @@
    "fetchedAt": "2026-10-05",
    "releasedAt": "",
    "channel": null,
-   "order": 1038,
+   "order": 1035,
    "firstSeen": "2026-10-05"
   },
   {
@@ -1642,7 +1579,7 @@
    "fetchedAt": "2026-10-05",
    "releasedAt": "",
    "channel": null,
-   "order": 1039,
+   "order": 1036,
    "firstSeen": "2026-10-05"
   },
   {
@@ -1663,7 +1600,7 @@
    "fetchedAt": "2026-10-05",
    "releasedAt": "",
    "channel": null,
-   "order": 1040,
+   "order": 1037,
    "firstSeen": "2026-10-05"
   },
   {
@@ -1684,7 +1621,7 @@
    "fetchedAt": "2026-10-05",
    "releasedAt": "",
    "channel": null,
-   "order": 1041,
+   "order": 1038,
    "firstSeen": "2026-10-05"
   },
   {
@@ -1705,7 +1642,7 @@
    "fetchedAt": "2026-10-05",
    "releasedAt": "",
    "channel": null,
-   "order": 1042,
+   "order": 1039,
    "firstSeen": "2026-10-05"
   },
   {
@@ -1726,7 +1663,7 @@
    "fetchedAt": "2026-10-05",
    "releasedAt": "",
    "channel": null,
-   "order": 1043,
+   "order": 1040,
    "firstSeen": "2026-10-05"
   },
   {
@@ -1747,7 +1684,7 @@
    "fetchedAt": "2026-10-05",
    "releasedAt": "",
    "channel": null,
-   "order": 1044,
+   "order": 1041,
    "firstSeen": "2026-10-05"
   },
   {
@@ -1768,7 +1705,7 @@
    "fetchedAt": "2026-10-05",
    "releasedAt": "",
    "channel": null,
-   "order": 1045,
+   "order": 1042,
    "firstSeen": "2026-10-05"
   },
   {
@@ -1789,7 +1726,7 @@
    "fetchedAt": "2026-10-05",
    "releasedAt": "",
    "channel": null,
-   "order": 1046,
+   "order": 1043,
    "firstSeen": "2026-10-05"
   },
   {
@@ -1810,7 +1747,7 @@
    "fetchedAt": "2026-10-05",
    "releasedAt": "",
    "channel": null,
-   "order": 1047,
+   "order": 1044,
    "firstSeen": "2026-10-05"
   }
  ]
