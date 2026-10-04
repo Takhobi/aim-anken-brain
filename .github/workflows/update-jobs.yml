@@ -1,0 +1,36 @@
+name: 案件リストを更新
+
+on:
+  schedule:
+    - cron: "0 21 * * *"   # 毎日 21:00 UTC = 日本時間 朝6:00
+  workflow_dispatch: {}    # Actions タブから手動でも実行できる
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-jobs
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: 案件を取得して jobs.json を作り直す
+        run: python3 update_jobs.py
+      - name: 変わっていれば保存する
+        run: |
+          if git diff --quiet -- jobs.json; then
+            echo "変更なし"
+            exit 0
+          fi
+          git config user.name "anken-brain-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add jobs.json
+          git commit -m "案件リストを自動更新（$(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M')）"
+          git push
