@@ -16,4 +16,7 @@
 |---|---|
 | `index.html` | 画面 |
 | `app.js` | 動き |
-| `jobs.json` | 案件リスト（運営が更新） |
+| `jobs.json` | 案件リスト（毎日朝6時に自動更新。手で編集しない） |
+| `curated.json` | 手で中身を確認した案件（Indeed など）。ここを編集する |
+| `update_jobs.py` | クラウドワークス・ランサーズの新着を取得して `curated.json` と合体し、`jobs.json` を作る |
+| `.github/workflows/update-jobs.yml` | 上のスクリプトを毎日動かす設定（Actions タブから手動実行も可） |

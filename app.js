@@ -299,14 +299,14 @@ function viewPick(){
   const jobs = allJobs();
   const base = jobs.filter(j => S.media==="all" || mkey(j)===S.media);
   const hasRefOrCh = j => j.group==="A" || j.refVideos?.length;
-  const counts = {all: base.length, A: base.filter(hasRefOrCh).length, pick: base.filter(j=>j.status==="pick"||j.status==="sent").length, new: base.filter(j=>j.status==="new").length, skip: base.filter(j=>j.status==="skip").length};
+  const counts = {all: base.length, fresh: base.filter(isNewJob).length, A: base.filter(hasRefOrCh).length, pick: base.filter(j=>j.status==="pick"||j.status==="sent").length, new: base.filter(j=>j.status==="new").length, skip: base.filter(j=>j.status==="skip").length};
   const mcount = k => k==="all" ? jobs.length : jobs.filter(j=>mkey(j)===k).length;
-  const list = base.filter(j => S.filter==="all" ? true : S.filter==="A" ? hasRefOrCh(j) : S.filter==="pick" ? (j.status==="pick"||j.status==="sent") : S.filter==="skip" ? j.status==="skip" : j.status==="new");
+  const list = base.filter(j => S.filter==="all" ? true : S.filter==="fresh" ? isNewJob(j) : S.filter==="A" ? hasRefOrCh(j) : S.filter==="pick" ? (j.status==="pick"||j.status==="sent") : S.filter==="skip" ? j.status==="skip" : j.status==="new");
   const m = S.meta || {};
   return `
   ${!S.profile ? `<div class="notice" style="margin-bottom:16px"><b>はじめての方へ：</b>案件を選ぶ前後どちらでも大丈夫です。営業文を作る前に <button class="btn primary sm" data-go="profile">プロフィールを登録</button> してください。</div>` : ""}
   <section class="search">
-    <div class="search-head"><h3>案件リスト <span class="quiet" style="font-size:13px;font-weight:700">最終更新 ${esc(m.updatedAt || "—")}・Indeed／クラウドワークス／ランサーズから集めています</span></h3>
+    <div class="search-head"><h3>案件リスト <span class="quiet" style="font-size:13px;font-weight:700">最終更新 ${esc(m.updatedAt || "—")}・${esc(m.autoUpdate || "Indeed／クラウドワークス／ランサーズから集めています")}</span></h3>
       <button class="btn ghost sm" data-act="reload">最新のリストを読み込む</button>
       <button class="btn primary sm" data-act="addjob-open">案件を自分で追加</button></div>
     ${S.flow?.kind === "addjob" ? addJobCard() : ""}
@@ -317,11 +317,16 @@ function viewPick(){
     <p>ピンと来た案件に「営業する」。気が乗らないものは見送り。相手のチャンネルや参考動画が分かっている案件ほど、1通目が強くなります。</p></div>
     <div class="filters">
       <div class="seg" role="group" aria-label="媒体">${[["all","全媒体"],["indeed","Indeed"],["crowdworks","クラウドワークス"],["lancers","ランサーズ"]].map(([k,l]) => `<button data-media="${k}" aria-pressed="${S.media===k}">${l}<span class="n">${mcount(k)}</span></button>`).join("")}</div>
-      <div class="seg" role="group" aria-label="絞り込み">${[["all","すべて"],["A","動画あり"],["new","未判断"],["pick","営業する"],["skip","見送り"]].map(([k,l]) => `<button data-filter="${k}" aria-pressed="${S.filter===k}">${l}<span class="n">${counts[k]}</span></button>`).join("")}</div>
+      <div class="seg" role="group" aria-label="絞り込み">${[["all","すべて"],["fresh","NEW"],["A","動画あり"],["new","未判断"],["pick","営業する"],["skip","見送り"]].map(([k,l]) => `<button data-filter="${k}" aria-pressed="${S.filter===k}">${l}<span class="n">${counts[k]}</span></button>`).join("")}</div>
     </div>
   </div>
   ${list.length ? `<div class="grid">${list.map(cardJob).join("")}</div>` : `<div class="empty"><b>該当なし</b>絞り込みを変えてください。</div>`}
   ${picked().length ? `<div class="row" style="margin-top:22px;justify-content:flex-end"><button class="btn primary" data-go="analyze">選んだ ${picked().length} 件の動画を分析する →</button></div>` : ""}`;
+}
+function isNewJob(j){
+  if (!j.firstSeen) return false;
+  const d = (Date.now() - new Date(j.firstSeen + "T00:00:00+09:00").getTime()) / 86400000;
+  return d <= 2;
 }
 function cardJob(j){
   const st = j.status, ch = j.channel, on = st==="pick"||st==="sent";
@@ -332,6 +337,8 @@ function cardJob(j){
         ${j.refVideos?.length ? `<span class="chip a" style="background:var(--navy);border-color:var(--navy);color:var(--surface)">参考動画あり</span>` : ""}
         ${j.group!=="A" && !j.refVideos?.length ? `<span class="chip b">募集要項のみ</span>` : ""}
         <span class="chip media" data-m="${mkey(j)}">${esc(M(j).name)}</span>
+        ${isNewJob(j) ? `<span class="chip new" style="background:var(--orange);border-color:var(--orange);color:var(--on-orange)">NEW</span>` : ""}
+        ${j.auto ? `<span class="chip">自動取得</span>` : ""}
         ${j.custom ? `<span class="chip">自分で追加</span>` : ""}
         ${st==="sent" ? `<span class="chip sent">応募済み ${esc(j.sentAt)}</span>` : ""}
       </div>

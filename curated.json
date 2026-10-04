@@ -1,0 +1,915 @@
+{
+ "collectedIndeed": 233,
+ "collectedManual": 233,
+ "note": "手で中身を確認して整えた案件（Indeed など）。update_jobs.py が自動取得分と合体して jobs.json を作る。",
+ "jobs": [
+  {
+   "applyUrl": "https://jp.indeed.com/viewjob?jk=0c631f366dea437c",
+   "channel": {
+    "fetchedAt": "2026-09-27",
+    "lastPost": "2026-09-27",
+    "name": "年収チャンネル",
+    "recent": [
+     {
+      "date": "9/26",
+      "views": 11492
+     },
+     {
+      "date": "9/25",
+      "views": 16184
+     },
+     {
+      "date": "9/24",
+      "views": 16756
+     }
+    ],
+    "subs": "28.5万人",
+    "url": "https://www.youtube.com/@nensyu_channel"
+   },
+   "company": "StockSun株式会社",
+   "group": "A",
+   "media": "Indeed",
+   "order": 1,
+   "summary": "リモート。月5〜7本が理想、月1〜3本から相談可。カット・テロップ・画像・色味・SE/BGM。素材納品から約1週間で納品。",
+   "tanka": "月20万〜30万円（業務委託）",
+   "title": "YouTube動画編集スタッフ（ビジネス・キャリア系／平均20〜30分）",
+   "requirements": [
+    {
+     "label": "Premiere Pro"
+    },
+    {
+     "label": "ビジネス系の編集経験"
+    },
+    {
+     "label": "月5〜7本の対応",
+     "note": "月1〜3本から相談可"
+    }
+   ],
+   "id": "stocksun",
+   "fetchedAt": "2026-09-27"
+  },
+  {
+   "applyUrl": "https://jp.indeed.com/viewjob?jk=680cabe5b003c951",
+   "channel": {
+    "fetchedAt": "2026-09-27",
+    "lastPost": "2026-09-27",
+    "name": "世界一周の案内人",
+    "recent": [
+     {
+      "date": "9/26",
+      "views": 6319
+     },
+     {
+      "date": "9/25",
+      "views": 3092
+     },
+     {
+      "date": "9/24",
+      "views": 6624
+     }
+    ],
+    "subs": "2.5万人",
+    "url": "https://www.youtube.com/@sekai_issyuu"
+   },
+   "company": "株式会社M&C Creation",
+   "group": "A",
+   "media": "Indeed",
+   "order": 2,
+   "summary": "完全リモート。素材1.5〜2時間、台本がない回もあり構成から考える。テロップ・ツッコミは本人のセンス。選考はポートフォリオ→編集テスト（謝礼1,000円）→面談。",
+   "tanka": "完全歩合制（1本単価の記載なし。同社の別求人は1本8,500〜20,000円）",
+   "title": "動画編集者（世界一周クルーズ船のYouTube／10〜30分・月2本程度）",
+   "requirements": [
+    {
+     "label": "Premiere Pro"
+    },
+    {
+     "label": "テロップ・ツッコミを含む編集経験"
+    },
+    {
+     "label": "エンタメ・旅Vlog系の経験（歓迎）"
+    }
+   ],
+   "id": "mandc",
+   "fetchedAt": "2026-09-27"
+  },
+  {
+   "applyUrl": "https://jp.indeed.com/viewjob?jk=7c5c32661537de57",
+   "channel": {
+    "fetchedAt": "2026-09-27",
+    "lastPost": "2026-09-19",
+    "name": "英語維新〜はじめてのイマージョン〜",
+    "recent": [
+     {
+      "date": "9/19",
+      "views": 18962
+     },
+     {
+      "date": "9/14",
+      "views": 10196
+     },
+     {
+      "date": "9/5",
+      "views": 15566
+     }
+    ],
+    "subs": "6万人",
+    "url": "https://www.youtube.com/@englishrestoration"
+   },
+   "company": "Splats株式会社",
+   "group": "A",
+   "media": "Indeed",
+   "order": 3,
+   "summary": "完全在宅。音声・BGM支給、フリー素材や映画シーンを挿入。AIツール利用可。修正は平均3〜4往復。素材から2週間以内に納品。専業フリーランス歓迎。",
+   "tanka": "1.5〜6万円/本（10分まで）＋10分以降1分ごと1,000〜2,000円",
+   "title": "英語学習YouTubeチャンネルの動画編集（10〜90分）",
+   "requirements": [
+    {
+     "label": "Premiere Proの実務経験"
+    },
+    {
+     "label": "専業での編集経験"
+    }
+   ],
+   "id": "splats",
+   "fetchedAt": "2026-09-27"
+  },
+  {
+   "applyUrl": "https://jp.indeed.com/viewjob?jk=119b0dc7b95fe7cf",
+   "channel": null,
+   "company": "FR0M",
+   "group": "B",
+   "media": "Indeed",
+   "order": 4,
+   "refVideos": [
+    {
+     "channel": "Kくん【X攻略】",
+     "duration": "38:54",
+     "note": "解説系の参考動画として募集文に掲載",
+     "title": "【2026年過去最高】X始め方完全ロードマップ・0フォロワーでも今なら余裕で伸びる",
+     "url": "https://www.youtube.com/watch?v=rFZOkVZd67o",
+     "views": "4,837回（2026-09-28時点）"
+    },
+    {
+     "title": "参考動画2（未分析）",
+     "url": "https://www.youtube.com/watch?v=UKz_QBKrTc4"
+    },
+    {
+     "title": "参考チャンネル（未分析）",
+     "url": "https://youtube.com/@pickleball-hack"
+    }
+   ],
+   "summary": "横型の解説系・実写ビジネス動画。プロマネあり。月1〜10本。60秒の編集テストあり。副業不可（個人事業主・法人のみ）。",
+   "tanka": "完成尺1,200〜2,000円/分（解説系）",
+   "title": "【Premiereのみ】解説系（非属人）YouTube動画の編集",
+   "requirements": [
+    {
+     "label": "Premiere Pro"
+    },
+    {
+     "label": "個人事業主・法人（副業不可）"
+    }
+   ],
+   "id": "fr0m",
+   "fetchedAt": "2026-09-27"
+  },
+  {
+   "applyUrl": "https://jp.indeed.com/viewjob?jk=c393106e99769f90",
+   "channel": null,
+   "company": "株式会社ソウジ",
+   "group": "B",
+   "media": "Indeed",
+   "order": 5,
+   "summary": "完成尺10〜20分。フルテロップ中心、編集規約あり。ポートフォリオ提出必須。Chatwork連絡。",
+   "tanka": "完全歩合制（金額の記載なし）",
+   "title": "YouTube動画編集スタッフ（顔出しなし解説系）",
+   "requirements": [
+    {
+     "label": "Premiere Pro"
+    },
+    {
+     "label": "ビジネス系YouTube編集の経験",
+     "note": "10本"
+    },
+    {
+     "label": "顔出しなし・解説系の編集経験"
+    },
+    {
+     "label": "編集歴1年以上"
+    },
+    {
+     "label": "ポートフォリオ提出"
+    }
+   ],
+   "id": "souji",
+   "fetchedAt": "2026-09-27"
+  },
+  {
+   "applyUrl": "https://jp.indeed.com/viewjob?jk=ea1e2fe99d32d0dc",
+   "channel": null,
+   "company": "株式会社Zero-One",
+   "group": "B",
+   "media": "Indeed",
+   "order": 6,
+   "summary": "完全在宅。カット・テロップ・素材・BGM/SE・色味。プロジェクトファイル込みで納品。韓国語は不要。",
+   "tanka": "完全歩合制（金額の記載なし）",
+   "title": "韓国語レッスン動画の編集（完成尺10〜15分・継続）",
+   "requirements": [
+    {
+     "label": "Premiere Pro"
+    },
+    {
+     "label": "プロジェクトファイル込みの納品"
+    }
+   ],
+   "id": "zeroone",
+   "fetchedAt": "2026-09-27"
+  },
+  {
+   "applyUrl": "https://jp.indeed.com/viewjob?jk=b27c021fd8980978",
+   "channel": null,
+   "company": "株式会社メドエックス",
+   "group": "B",
+   "media": "Indeed",
+   "order": 7,
+   "summary": "医療機関に特化したSNS運用支援のスタートアップ。リールに適した制作、ナレッジ共有。",
+   "tanka": "時給2,000〜5,000円（業務委託）",
+   "title": "医療／看護×SNSのショート動画編集（フルリモート）",
+   "requirements": [
+    {
+     "label": "リール動画の編集経験"
+    },
+    {
+     "label": "週の稼働時間"
+    }
+   ],
+   "id": "medx",
+   "fetchedAt": "2026-09-27"
+  },
+  {
+   "applyUrl": "https://jp.indeed.com/viewjob?jk=db58e6c689a62d39",
+   "channel": null,
+   "company": "株式会社MYUUU",
+   "group": "B",
+   "media": "Indeed",
+   "order": 8,
+   "summary": "経営者向けAIコミュニティのショート（1〜2分）とVSL（30〜60分）。企画・構成重視。ショート週10本程度の継続。生成AIツール利用自由。",
+   "tanka": "1本ごとの校了払い（最大1万円/本の記載）",
+   "title": "ショート動画＋VSLの企画から制作まで",
+   "requirements": [
+    {
+     "label": "ショート動画の実績"
+    },
+    {
+     "label": "週10本の継続対応"
+    },
+    {
+     "label": "企画・構成から入った経験"
+    }
+   ],
+   "id": "myuuu",
+   "fetchedAt": "2026-09-27"
+  },
+  {
+   "applyUrl": "https://jp.indeed.com/viewjob?jk=4cc1a6784f592dd0",
+   "channel": null,
+   "company": "株式会社BUZZConsulting",
+   "group": "B",
+   "media": "Indeed",
+   "order": 9,
+   "summary": "CapCutで美肌加工→Premiereで編集、台本に沿って画像を検索・挿入。クライアントアカウントへの投稿作業まで担当。",
+   "tanka": "完全歩合制（求人タイトルに月額20万円〜）",
+   "title": "美容医療クリニックのショート動画編集",
+   "requirements": [
+    {
+     "label": "Premiere Pro"
+    },
+    {
+     "label": "CapCutの使用"
+    },
+    {
+     "label": "投稿作業まで対応"
+    }
+   ],
+   "id": "buzz",
+   "fetchedAt": "2026-09-27"
+  },
+  {
+   "applyUrl": "https://jp.indeed.com/viewjob?jk=88e6fbf7b6afb43f",
+   "channel": null,
+   "company": "株式会社ワンダーフォーサイト",
+   "group": "B",
+   "media": "Indeed",
+   "order": 10,
+   "summary": "ショート編集、サムネ・図解制作、演出提案、素材管理。フルリモート可だが都内近郊在住が条件。",
+   "tanka": "月29.17万〜37.5万円（業務委託）",
+   "title": "動画制作ディレクター（ショート編集＋外部ベンダーのディレクション）",
+   "requirements": [
+    {
+     "label": "Premiere Proの実務1年以上"
+    },
+    {
+     "label": "都内近郊在住"
+    },
+    {
+     "label": "Photoshop／Illustrator"
+    }
+   ],
+   "id": "wonder",
+   "fetchedAt": "2026-09-27"
+  },
+  {
+   "applicants": 12,
+   "applyUrl": "https://crowdworks.jp/public/jobs/13466206",
+   "channel": {
+    "fetchedAt": "2026-09-28",
+    "lastPost": "9/24頃",
+    "name": "人生最後のダイエットチャンネル",
+    "recent": [
+     {
+      "date": "9/24頃",
+      "views": 20000
+     },
+     {
+      "date": "9/18頃",
+      "views": 16000
+     },
+     {
+      "date": "9/14頃",
+      "views": 110000
+     }
+    ],
+    "subs": "9.21万人",
+    "url": "https://www.youtube.com/@isso0221"
+   },
+   "company": "個人の依頼主（ダイエット系YouTube）",
+   "deadline": "10/4",
+   "fetchedAt": "2026-09-28",
+   "formQuestions": [
+    "お名前／簡単な自己紹介",
+    "編集歴（年数・本数）",
+    "長尺動画（30分以上）の編集経験：あり（◯本程度）／なし",
+    "ポートフォリオ・実績URL",
+    "使用編集ソフト",
+    "素材お渡しから何日で納品可能か",
+    "1ヶ月に対応可能な本数"
+   ],
+   "group": "A",
+   "media": "クラウドワークス",
+   "order": 11,
+   "summary": "話者1名の講座（ローンチ）動画。素材約50分→完成約40分。フルテロップ・装飾・図解・BGM/SE・OP/ED。見本動画と編集指示書あり。納期10日、修正2回まで。応募フォームのコピペ必須。",
+   "tanka": "1本18,000円（税込）・月1〜2本",
+   "title": "ダイエット系ローンチ動画の編集（完成尺40分・見本動画あり）",
+   "requirements": [
+    {
+     "label": "募集枠",
+     "note": "募集1人に対し、2026-09-28時点で1人契約済みの表示。まだ受け付けているか要確認",
+     "warn": true
+    },
+    {
+     "label": "長尺（30分以上）の編集経験"
+    },
+    {
+     "label": "ポートフォリオ（必須）"
+    },
+    {
+     "label": "編集ソフト指定なし"
+    }
+   ],
+   "id": "cw-isso"
+  },
+  {
+   "applicants": 32,
+   "applyUrl": "https://crowdworks.jp/public/jobs/13457805",
+   "channel": null,
+   "company": "株式会社国境離島革命団",
+   "deadline": "9/30",
+   "fetchedAt": "2026-09-28",
+   "formQuestions": [
+    "YouTubeポートフォリオURL（3本以上）",
+    "Premiere Pro使用歴（年数）",
+    "1ヶ月に対応可能な本数",
+    "現在の他案件の稼働状況",
+    "1本あたりのご希望単価"
+   ],
+   "group": "B",
+   "media": "クラウドワークス",
+   "order": 12,
+   "summary": "鹿児島のSNSマーケ支援会社。素材30〜90分。ビジネス系・インタビュー・対談・密着を特に歓迎。有償テストあり。同社はショート動画（月20〜30万円・月80〜120本）も別求人で募集中。",
+   "tanka": "1本15,000〜30,000円（継続で月額20〜30万円に移行相談可）",
+   "title": "企業YouTube・インタビュー・対談の長尺動画編集（完成10〜30分）",
+   "requirements": [
+    {
+     "label": "Premiere Pro"
+    },
+    {
+     "label": "YouTube長尺の編集経験"
+    },
+    {
+     "label": "1営業日以内の返信"
+    }
+   ],
+   "id": "cw-kokkyo"
+  },
+  {
+   "applicants": 15,
+   "applyUrl": "https://crowdworks.jp/public/jobs/13461498",
+   "channel": null,
+   "company": "個人の依頼主（評価4.9・13件）",
+   "deadline": "10/1",
+   "fetchedAt": "2026-09-28",
+   "formQuestions": [
+    "編集を学んだ講座・スクール名",
+    "現在の働き方（フリーランス・副業・主婦など）",
+    "使用ソフト",
+    "お仕事で大切にしていること",
+    "長尺動画の累計本数",
+    "ポートフォリオ",
+    "本案件の月の対応本数",
+    "今後の目標"
+   ],
+   "group": "B",
+   "media": "クラウドワークス",
+   "order": 13,
+   "priceNote": "契約金額は税込25,000円で入力（違う金額は不採用）",
+   "refVideos": [
+    {
+     "channel": "積読チャンネル",
+     "duration": "42:19",
+     "note": "募集文に「担当のチャンネルではありません（テンポ感は似てます）」と記載",
+     "title": "多様性に疲れたら見る動画",
+     "url": "https://www.youtube.com/watch?v=E7taIUyeb-0",
+     "views": "480,054回（2026-09-28時点）"
+    }
+   ],
+   "summary": "月1〜4本。依頼から7〜10日で初稿、修正は24時間以内。毎日の進捗報告。3分のテスト編集（無報酬）→面談→採用。実績公開NG。",
+   "tanka": "1本25,000円（税込・20分まで）＋1分ごと1,000円",
+   "title": "ビジネス系YouTubeロングの編集（完成尺20分前後）",
+   "requirements": [
+    {
+     "label": "Premiere Pro"
+    },
+    {
+     "label": "15分以上の長尺を5本以上納品"
+    },
+    {
+     "label": "Chatworkでのやり取り"
+    },
+    {
+     "label": "無報酬の3分テスト"
+    }
+   ],
+   "id": "cw-matsukane"
+  },
+  {
+   "applicants": 31,
+   "applyUrl": "https://crowdworks.jp/public/jobs/13467995",
+   "channel": null,
+   "company": "個人の依頼主（本人確認済み）",
+   "deadline": "10/5",
+   "fetchedAt": "2026-09-28",
+   "formQuestions": [
+    "お名前（ニックネーム可）・自己紹介",
+    "動画編集歴／使用している編集ソフト",
+    "YouTube長尺動画の編集経験",
+    "完成尺20分前後の動画を3〜5日以内に納品可能か",
+    "ポートフォリオ（今まで編集した動画）"
+   ],
+   "group": "B",
+   "media": "クラウドワークス",
+   "order": 14,
+   "summary": "週1〜2本。参考動画をもとにした完コピ・再現編集。画像・動画素材のリサーチも担当。サムネ3枚作成できれば尚可（報酬相談）。完成20分前後を3〜5日で納品。",
+   "tanka": "1本15,000円（税込）〜",
+   "title": "Premiere Pro限定 YouTube長尺動画の編集（完成15〜20分）",
+   "requirements": [
+    {
+     "label": "Premiere Pro"
+    },
+    {
+     "label": "完コピ・再現編集の経験"
+    },
+    {
+     "label": "20分動画を3〜5日で納品"
+    },
+    {
+     "label": "週1〜2本の対応"
+    }
+   ],
+   "id": "cw-ueda"
+  },
+  {
+   "applicants": 24,
+   "applyUrl": "https://www.lancers.jp/work/detail/5599167",
+   "channel": null,
+   "company": "企業・クリニックのSNS運用支援会社（依頼主名はランサーズで確認）",
+   "fetchedAt": "2026-09-28",
+   "formQuestions": [
+    "作業可能時間／連絡可能時間",
+    "編集歴",
+    "実績（長尺動画の本数・年数）",
+    "応募理由",
+    "ポートフォリオURL",
+    "PCスペック（機種、OS、CPU、メモリ、GPU）",
+    "簡単な自己PR"
+   ],
+   "group": "B",
+   "media": "ランサーズ",
+   "order": 15,
+   "refVideos": [
+    {
+     "note": "募集文に「弊社動画ではありません」と記載。チャンネル単位の指定なので、動画を1本選んで分析する",
+     "title": "参考チャンネル（@engineer_first）",
+     "url": "https://www.youtube.com/@engineer_first"
+    }
+   ],
+   "summary": "分かりやすさ・信頼感重視。フルテロップ・図解。月4本以上（10〜20本も可）。素材から3〜5日で納品。テスト編集は1本3,000円。副業の会社員・学生・法人は対象外。",
+   "tanka": "20分まで11,000円（10分7,000円〜、以降5分ごと+2,000円）",
+   "title": "ビジネス系YouTube長尺の編集（横型10〜25分）",
+   "requirements": [
+    {
+     "label": "編集経験1年以上 または 30本以上"
+    },
+    {
+     "label": "副業の会社員は対象外"
+    },
+    {
+     "label": "Premiere Pro（歓迎）"
+    }
+   ],
+   "id": "lc-bizlong"
+  },
+  {
+   "applicants": 36,
+   "applyUrl": "https://www.lancers.jp/work/detail/5602570",
+   "channel": null,
+   "company": "ビジネス・お仕事紹介系チャンネルの運営会社（チャンネル名は選考通過後）",
+   "fetchedAt": "2026-09-28",
+   "formQuestions": [],
+   "group": "B",
+   "media": "ランサーズ",
+   "order": 16,
+   "priceNote": "1本目のテストとして6,000円で見積もる",
+   "summary": "撮影素材・構成台本は支給。編集マニュアルとサンプル動画あり。月5本程度。1〜2週間で納品、修正2回まで。実績のポートフォリオ掲載は不可。",
+   "tanka": "テスト1本6,000円 → 継続1本15,000円",
+   "title": "YouTube長尺動画の編集（10〜20分・一人語り）｜Premiere Pro",
+   "requirements": [
+    {
+     "label": "Premiere Pro"
+    },
+    {
+     "label": "長尺（10分以上）の編集実績",
+     "note": "ショートのみは対象外"
+    },
+    {
+     "label": "1営業日以内の返信"
+    }
+   ],
+   "id": "lc-test15k"
+  },
+  {
+   "applyUrl": "https://www.lancers.jp/work/detail/5607536",
+   "channel": null,
+   "company": "大手企業・インフルエンサー案件の制作会社（依頼主名はランサーズで確認）",
+   "fetchedAt": "2026-09-28",
+   "formQuestions": [
+    "簡単な自己紹介",
+    "編集歴",
+    "過去の編集実績やポートフォリオ（YouTubeロングを重視）",
+    "週に納品可能な本数の目安",
+    "1本当たりの希望見積もり金額"
+   ],
+   "group": "B",
+   "media": "ランサーズ",
+   "order": 17,
+   "refVideos": [
+    {
+     "channel": "ホワットのこんなお仕事あったんだチャンネル",
+     "note": "オフライン編集という仕事の説明動画。作風の見本というより、求める作業範囲の説明",
+     "title": "【映像編集】オフラインエディターのお仕事 後篇",
+     "url": "https://www.youtube.com/watch?v=c2Utfp3QS68"
+    }
+   ],
+   "summary": "カットとテンポ作りが中心。週1本〜。素材共有から3日以内に納品。書類→面接→有償テスト（同額）→正式発注。",
+   "tanka": "1本10,000円〜（昇給あり）",
+   "title": "YouTubeロング動画のオフライン編集（素材40〜60分→完成20分）",
+   "requirements": [
+    {
+     "label": "Premiere Pro"
+    },
+    {
+     "label": "YouTubeロングの実績（ポートフォリオ必須）"
+    },
+    {
+     "label": "3日以内の納品"
+    }
+   ],
+   "id": "lc-offline"
+  },
+  {
+   "applyUrl": "https://jp.indeed.com/viewjob?jk=1172bd75f6857c28",
+   "channel": null,
+   "company": "株式会社ミギナナメウエ",
+   "fetchedAt": "2026-09-28",
+   "group": "B",
+   "media": "Indeed",
+   "order": 18,
+   "summary": "社員インタビュー等の編集。テロップ・字幕、BGM・SE、サムネイル作成、修正対応。完全在宅。画角・尺・サムネ有無で単価は案件ごとに決定。",
+   "tanka": "1本18,000〜20,000円（目安・業務委託）",
+   "title": "採用広報YouTubeの動画編集（社員インタビュー等・横型15分程度）",
+   "requirements": [
+    {
+     "label": "動画編集経験1年以上"
+    },
+    {
+     "label": "案件として納品した経験"
+    },
+    {
+     "label": "サムネイル作成"
+    }
+   ],
+   "id": "in-1172bd75"
+  },
+  {
+   "applyUrl": "https://jp.indeed.com/viewjob?jk=210554f006d7bc84",
+   "channel": null,
+   "company": "株式会社Bee Laboratory",
+   "fetchedAt": "2026-09-28",
+   "group": "B",
+   "media": "Indeed",
+   "order": 19,
+   "refVideos": [
+    {
+     "title": "参考アカウント（TikTok）",
+     "url": "https://www.tiktok.com/@skincare_behind"
+    },
+    {
+     "title": "参考アカウント（Instagram）",
+     "url": "https://www.instagram.com/tac.dr.yuji/"
+    },
+    {
+     "title": "参考アカウント（Instagram）",
+     "url": "https://www.instagram.com/sho_niimi"
+    },
+    {
+     "title": "参考アカウント（Instagram）",
+     "url": "https://www.instagram.com/norimoto.ijiri/"
+    }
+   ],
+   "summary": "大手含む複数業界のクライアントアカウントのショート編集。面談通過後は複数案件の依頼を確約。指定アカウントの編集を完コピできることが条件。",
+   "tanka": "1本2,500円以上（業務委託）",
+   "title": "クライアントのInstagram・TikTok用ショート動画編集（フルリモート）",
+   "requirements": [
+    {
+     "label": "Premiere Pro"
+    },
+    {
+     "label": "ショート動画の実績"
+    },
+    {
+     "label": "指定アカウントの完コピ"
+    }
+   ],
+   "id": "in-210554f0"
+  },
+  {
+   "applyUrl": "https://jp.indeed.com/viewjob?jk=36e906d7151d7831",
+   "channel": null,
+   "company": "株式会社M&C Creation",
+   "fetchedAt": "2026-09-28",
+   "formQuestions": [
+    "簡単な自己紹介と編集歴（経歴も含めて）",
+    "専業or副業",
+    "受講した講座やスクール",
+    "PCスペック",
+    "実績や今までの納品本数、今他で受けてる案件数",
+    "リソースの目安（1週間あたり）",
+    "希望単価",
+    "自己PR"
+   ],
+   "group": "B",
+   "media": "Indeed",
+   "order": 20,
+   "summary": "YouTube・Instagram・TikTokを複数運営する会社の受託案件。月5本以上の発注あり。書類→面談→3分のテスト編集→本契約。※同社の世界一周クルーズ案件とは別の求人。",
+   "tanka": "1本8,500〜20,000円（業務委託）",
+   "title": "YouTube動画のカット・テロップ編集（ビジネス系／エンタメ系・15〜30分）",
+   "requirements": [
+    {
+     "label": "Premiere Pro"
+    },
+    {
+     "label": "修正対応を中1日で"
+    }
+   ],
+   "id": "in-36e906d7"
+  },
+  {
+   "applyUrl": "https://jp.indeed.com/viewjob?jk=dad4800fcfa7913b",
+   "channel": null,
+   "company": "株式会社Bridge（LUXUWELL）",
+   "fetchedAt": "2026-09-28",
+   "group": "B",
+   "media": "Indeed",
+   "order": 21,
+   "summary": "日本各地で撮影済みのツアー素材を、Reels／TikTok／Shorts用に上質な雰囲気で仕上げる。総フォロワー8万人超のアカウント。リモート完結。撮影できれば別途加算。",
+   "tanka": "完全歩合制（レベルに応じて報酬を設定）",
+   "title": "訪日富裕層向けツアーブランドのSNSショート動画編集",
+   "requirements": [
+    {
+     "label": "ショート動画の編集経験"
+    },
+    {
+     "label": "上質・洗練されたトンマナの表現"
+    }
+   ],
+   "id": "in-dad4800f"
+  },
+  {
+   "applicants": 2,
+   "applyUrl": "https://crowdworks.jp/public/jobs/13480604",
+   "channel": null,
+   "company": "個人の依頼主（講座販売・神社YouTube）",
+   "deadline": "10/9",
+   "fetchedAt": "2026-09-28",
+   "formQuestions": [
+    "簡単な自己紹介",
+    "動画編集の経験年数",
+    "横動画のポートフォリオ（YouTubeなど）"
+   ],
+   "group": "B",
+   "media": "クラウドワークス",
+   "order": 22,
+   "summary": "10月の講座販売開始に向けたVSLと受講生インタビュー、神社YouTubeのVlog。構成・台本・素材は支給。得意な種類だけでも可。参考動画のトンマナ再現を重視。テスト編集（1分程度）あり。",
+   "tanka": "VSL・受講生インタビュー 1本25,000〜30,000円／神社Vlog 1本5,000円",
+   "title": "横動画の編集（神社Vlog／セールス動画（VSL）／受講生インタビュー）",
+   "requirements": [
+    {
+     "label": "Premiere Proでの編集実績"
+    },
+    {
+     "label": "YouTubeなど横動画の編集経験"
+    },
+    {
+     "label": "日中にチャットで連絡"
+    }
+   ],
+   "id": "cw-13480604"
+  },
+  {
+   "applicants": 4,
+   "applyUrl": "https://crowdworks.jp/public/jobs/13487865",
+   "channel": null,
+   "company": "個人の依頼主（新規YouTubeチャンネル）",
+   "deadline": "10/12",
+   "fetchedAt": "2026-09-28",
+   "group": "B",
+   "media": "クラウドワークス",
+   "order": 23,
+   "refVideos": [
+    {
+     "note": "募集文に「編集のトンマナはこの海外風チャンネルを参考に」と記載",
+     "title": "参考動画（海外風チャンネル）",
+     "url": "https://youtu.be/sneY4NEV9fs"
+    }
+   ],
+   "summary": "月5〜10本。フルテロップ、大事な所は海外風の動きのあるテロップ。BGM・SE・フリー素材は編集者が用意。素材から10日以内。応募時に見積もり金額を入力。",
+   "tanka": "1本15,000円（税込・10分まで）＋10分以降1分ごと1,000円",
+   "title": "新規YouTubeチャンネルの編集（完成10〜20分・海外風の動くテロップ）",
+   "requirements": [
+    {
+     "label": "Premiere Pro／After Effects",
+     "note": "After Effectsはプロフィール外"
+    },
+    {
+     "label": "専業での編集経験"
+    }
+   ],
+   "id": "cw-13487865"
+  },
+  {
+   "applicants": 5,
+   "applyUrl": "https://crowdworks.jp/public/jobs/13488671",
+   "channel": null,
+   "company": "個人の依頼主（YouTube・週1本）",
+   "deadline": "10/12",
+   "fetchedAt": "2026-09-28",
+   "formQuestions": [
+    "簡単な自己紹介",
+    "本業か副業か",
+    "動画編集歴",
+    "週に作業可能な時間",
+    "フリー画像サイトの有料会員かどうか",
+    "ポートフォリオ",
+    "〜20分、〜25分、〜30分、それ以降の5分ごとの編集料金"
+   ],
+   "group": "B",
+   "media": "クラウドワークス",
+   "order": 24,
+   "refVideos": [
+    {
+     "note": "「当方のchではありません」と記載",
+     "title": "参考動画1",
+     "url": "https://www.youtube.com/watch?v=BBEC-3oWR1I"
+    },
+    {
+     "title": "参考動画2",
+     "url": "https://www.youtube.com/watch?v=HXQjrd5UyMs"
+    }
+   ],
+   "summary": "カット・テロップ・BGM/SE・素材集め。過去動画のテイストに合わせる。素材受け渡しから5日以内（厳守）。週1本程度。",
+   "tanka": "テスト1本3,000円 → 継続1本9,000円〜（尺に応じて増額）",
+   "title": "YouTube動画の継続編集（完成30分程度・45分超もあり）",
+   "requirements": [
+    {
+     "label": "5日以内の納品"
+    },
+    {
+     "label": "フリー画像サイトの有料会員"
+    }
+   ],
+   "id": "cw-13488671"
+  },
+  {
+   "applicants": 3,
+   "applyUrl": "https://crowdworks.jp/public/jobs/13481982",
+   "channel": null,
+   "company": "個人の依頼主（ストーリー系ビジネスYouTube）",
+   "fetchedAt": "2026-09-28",
+   "group": "B",
+   "media": "クラウドワークス",
+   "order": 25,
+   "summary": "会社・仕事・社会がテーマの実写ベース。テロップ・図解・生成AI素材・BGM/SE。既存フォーマットを理解して演出を提案できる人。チームプロジェクト使用。",
+   "tanka": "時給4,000円〜（契約金額4,662円）",
+   "title": "ストーリー仕立てのビジネス・エンタメ系YouTubeの編集（図解・生成AI素材あり）",
+   "requirements": [
+    {
+     "label": "Premiere Pro（チームプロジェクト）"
+    },
+    {
+     "label": "生成AIでの画像・動画生成"
+    },
+    {
+     "label": "月20〜30時間以上（歓迎）"
+    }
+   ],
+   "id": "cw-13481982"
+  },
+  {
+   "applicants": 8,
+   "applyUrl": "https://crowdworks.jp/public/jobs/13485465",
+   "channel": null,
+   "company": "個人の依頼主（旅系YouTube）",
+   "deadline": "10/12",
+   "fetchedAt": "2026-09-28",
+   "formQuestions": [
+    "お名前（フルネーム）",
+    "現在のご年齢",
+    "今までのご経歴と現在の職業",
+    "制作実績・ポートフォリオ",
+    "最終学歴",
+    "現在のお住まい（都道府県）",
+    "業務開始可能日",
+    "日本橋オフィスへの出社可否（必須ではない）"
+   ],
+   "group": "B",
+   "media": "クラウドワークス",
+   "order": 26,
+   "summary": "カット〜テロップ・SE・アバン・スーパー。月5本以上の継続前提。台本・脚本やサムネ経験は歓迎。※応募時に年齢・最終学歴・住所（都道府県）などの記入を求められる。",
+   "tanka": "1本30,000円（税込・30分程度）＋10分ごと1万円・再生数ボーナスあり",
+   "title": "旅系YouTubeの編集（30分程度・アバン／スーパー制作まで）",
+   "requirements": [
+    {
+     "label": "YouTubeの編集経験"
+    },
+    {
+     "label": "月5本以上の継続"
+    },
+    {
+     "label": "応募時の個人情報の記入",
+     "note": "年齢・学歴・住所の都道府県など。出す範囲は自分で判断"
+    }
+   ],
+   "id": "cw-13485465"
+  },
+  {
+   "applicants": 108,
+   "applyUrl": "https://www.lancers.jp/work/detail/5606044",
+   "channel": null,
+   "company": "山口県の工務店（依頼主名はランサーズで確認）",
+   "fetchedAt": "2026-09-28",
+   "group": "B",
+   "media": "ランサーズ",
+   "order": 27,
+   "summary": "住宅ルームツアー（10〜15分）と代表の解説（10分）＋縦型ショート。落ち着いた空気感重視、テロップは要所のみ。1本目で型を一緒に作る。素材から7日以内。月1本〜。",
+   "tanka": "フル動画 1本目20,000〜50,000円／2本目以降15,000〜30,000円、ショート1本3,000〜5,000円",
+   "title": "工務店YouTubeのルームツアー・解説動画の編集（ショート切り出しあり）",
+   "requirements": [
+    {
+     "label": "Premiere Pro（プロジェクトファイル納品可なら尚可）"
+    },
+    {
+     "label": "カラー補正"
+    }
+   ],
+   "id": "lc-5606044"
+  }
+ ]
+}

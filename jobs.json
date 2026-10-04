@@ -1,12 +1,13 @@
 {
- "updatedAt": "2026-09-28",
- "collected": 693,
+ "updatedAt": "2026-10-05 00:11",
+ "autoUpdate": "毎日 朝6時ごろ（クラウドワークス・ランサーズの新着を自動取得）",
+ "collected": 1080,
  "bySource": {
-  "Indeed": 135,
-  "クラウドワークス": 337,
-  "ランサーズ": 221
+  "クラウドワークス": 400,
+  "ランサーズ": 447,
+  "Indeed（手動）": 233
  },
- "note": "公開されている募集ページから要点をまとめたものです。応募前に必ず元の募集ページで最新の内容を確認してください。",
+ "note": "公開されている募集ページから要点をまとめたものです。自動取得の案件は単価と内容で機械的に絞っています。応募前に必ず元の募集ページで最新の内容を確認してください。",
  "jobs": [
   {
    "applyUrl": "https://jp.indeed.com/viewjob?jk=0c631f366dea437c",
@@ -51,7 +52,8 @@
     }
    ],
    "id": "stocksun",
-   "fetchedAt": "2026-09-27"
+   "fetchedAt": "2026-09-27",
+   "firstSeen": "2026-10-05"
   },
   {
    "applyUrl": "https://jp.indeed.com/viewjob?jk=680cabe5b003c951",
@@ -95,7 +97,8 @@
     }
    ],
    "id": "mandc",
-   "fetchedAt": "2026-09-27"
+   "fetchedAt": "2026-09-27",
+   "firstSeen": "2026-10-05"
   },
   {
    "applyUrl": "https://jp.indeed.com/viewjob?jk=7c5c32661537de57",
@@ -136,7 +139,8 @@
     }
    ],
    "id": "splats",
-   "fetchedAt": "2026-09-27"
+   "fetchedAt": "2026-09-27",
+   "firstSeen": "2026-10-05"
   },
   {
    "applyUrl": "https://jp.indeed.com/viewjob?jk=119b0dc7b95fe7cf",
@@ -175,7 +179,8 @@
     }
    ],
    "id": "fr0m",
-   "fetchedAt": "2026-09-27"
+   "fetchedAt": "2026-09-27",
+   "firstSeen": "2026-10-05"
   },
   {
    "applyUrl": "https://jp.indeed.com/viewjob?jk=c393106e99769f90",
@@ -206,7 +211,8 @@
     }
    ],
    "id": "souji",
-   "fetchedAt": "2026-09-27"
+   "fetchedAt": "2026-09-27",
+   "firstSeen": "2026-10-05"
   },
   {
    "applyUrl": "https://jp.indeed.com/viewjob?jk=ea1e2fe99d32d0dc",
@@ -227,7 +233,8 @@
     }
    ],
    "id": "zeroone",
-   "fetchedAt": "2026-09-27"
+   "fetchedAt": "2026-09-27",
+   "firstSeen": "2026-10-05"
   },
   {
    "applyUrl": "https://jp.indeed.com/viewjob?jk=b27c021fd8980978",
@@ -248,7 +255,8 @@
     }
    ],
    "id": "medx",
-   "fetchedAt": "2026-09-27"
+   "fetchedAt": "2026-09-27",
+   "firstSeen": "2026-10-05"
   },
   {
    "applyUrl": "https://jp.indeed.com/viewjob?jk=db58e6c689a62d39",
@@ -272,7 +280,8 @@
     }
    ],
    "id": "myuuu",
-   "fetchedAt": "2026-09-27"
+   "fetchedAt": "2026-09-27",
+   "firstSeen": "2026-10-05"
   },
   {
    "applyUrl": "https://jp.indeed.com/viewjob?jk=4cc1a6784f592dd0",
@@ -296,7 +305,8 @@
     }
    ],
    "id": "buzz",
-   "fetchedAt": "2026-09-27"
+   "fetchedAt": "2026-09-27",
+   "firstSeen": "2026-10-05"
   },
   {
    "applyUrl": "https://jp.indeed.com/viewjob?jk=88e6fbf7b6afb43f",
@@ -320,150 +330,8 @@
     }
    ],
    "id": "wonder",
-   "fetchedAt": "2026-09-27"
-  },
-  {
-   "applicants": 12,
-   "applyUrl": "https://crowdworks.jp/public/jobs/13466206",
-   "channel": {
-    "fetchedAt": "2026-09-28",
-    "lastPost": "9/24頃",
-    "name": "人生最後のダイエットチャンネル",
-    "recent": [
-     {
-      "date": "9/24頃",
-      "views": 20000
-     },
-     {
-      "date": "9/18頃",
-      "views": 16000
-     },
-     {
-      "date": "9/14頃",
-      "views": 110000
-     }
-    ],
-    "subs": "9.21万人",
-    "url": "https://www.youtube.com/@isso0221"
-   },
-   "company": "個人の依頼主（ダイエット系YouTube）",
-   "deadline": "10/4",
-   "fetchedAt": "2026-09-28",
-   "formQuestions": [
-    "お名前／簡単な自己紹介",
-    "編集歴（年数・本数）",
-    "長尺動画（30分以上）の編集経験：あり（◯本程度）／なし",
-    "ポートフォリオ・実績URL",
-    "使用編集ソフト",
-    "素材お渡しから何日で納品可能か",
-    "1ヶ月に対応可能な本数"
-   ],
-   "group": "A",
-   "media": "クラウドワークス",
-   "order": 11,
-   "summary": "話者1名の講座（ローンチ）動画。素材約50分→完成約40分。フルテロップ・装飾・図解・BGM/SE・OP/ED。見本動画と編集指示書あり。納期10日、修正2回まで。応募フォームのコピペ必須。",
-   "tanka": "1本18,000円（税込）・月1〜2本",
-   "title": "ダイエット系ローンチ動画の編集（完成尺40分・見本動画あり）",
-   "requirements": [
-    {
-     "label": "募集枠",
-     "note": "募集1人に対し、2026-09-28時点で1人契約済みの表示。まだ受け付けているか要確認",
-     "warn": true
-    },
-    {
-     "label": "長尺（30分以上）の編集経験"
-    },
-    {
-     "label": "ポートフォリオ（必須）"
-    },
-    {
-     "label": "編集ソフト指定なし"
-    }
-   ],
-   "id": "cw-isso"
-  },
-  {
-   "applicants": 32,
-   "applyUrl": "https://crowdworks.jp/public/jobs/13457805",
-   "channel": null,
-   "company": "株式会社国境離島革命団",
-   "deadline": "9/30",
-   "fetchedAt": "2026-09-28",
-   "formQuestions": [
-    "YouTubeポートフォリオURL（3本以上）",
-    "Premiere Pro使用歴（年数）",
-    "1ヶ月に対応可能な本数",
-    "現在の他案件の稼働状況",
-    "1本あたりのご希望単価"
-   ],
-   "group": "B",
-   "media": "クラウドワークス",
-   "order": 12,
-   "summary": "鹿児島のSNSマーケ支援会社。素材30〜90分。ビジネス系・インタビュー・対談・密着を特に歓迎。有償テストあり。同社はショート動画（月20〜30万円・月80〜120本）も別求人で募集中。",
-   "tanka": "1本15,000〜30,000円（継続で月額20〜30万円に移行相談可）",
-   "title": "企業YouTube・インタビュー・対談の長尺動画編集（完成10〜30分）",
-   "requirements": [
-    {
-     "label": "Premiere Pro"
-    },
-    {
-     "label": "YouTube長尺の編集経験"
-    },
-    {
-     "label": "1営業日以内の返信"
-    }
-   ],
-   "id": "cw-kokkyo"
-  },
-  {
-   "applicants": 15,
-   "applyUrl": "https://crowdworks.jp/public/jobs/13461498",
-   "channel": null,
-   "company": "個人の依頼主（評価4.9・13件）",
-   "deadline": "10/1",
-   "fetchedAt": "2026-09-28",
-   "formQuestions": [
-    "編集を学んだ講座・スクール名",
-    "現在の働き方（フリーランス・副業・主婦など）",
-    "使用ソフト",
-    "お仕事で大切にしていること",
-    "長尺動画の累計本数",
-    "ポートフォリオ",
-    "本案件の月の対応本数",
-    "今後の目標"
-   ],
-   "group": "B",
-   "media": "クラウドワークス",
-   "order": 13,
-   "priceNote": "契約金額は税込25,000円で入力（違う金額は不採用）",
-   "refVideos": [
-    {
-     "channel": "積読チャンネル",
-     "duration": "42:19",
-     "note": "募集文に「担当のチャンネルではありません（テンポ感は似てます）」と記載",
-     "title": "多様性に疲れたら見る動画",
-     "url": "https://www.youtube.com/watch?v=E7taIUyeb-0",
-     "views": "480,054回（2026-09-28時点）"
-    }
-   ],
-   "summary": "月1〜4本。依頼から7〜10日で初稿、修正は24時間以内。毎日の進捗報告。3分のテスト編集（無報酬）→面談→採用。実績公開NG。",
-   "tanka": "1本25,000円（税込・20分まで）＋1分ごと1,000円",
-   "title": "ビジネス系YouTubeロングの編集（完成尺20分前後）",
-   "requirements": [
-    {
-     "label": "Premiere Pro"
-    },
-    {
-     "label": "15分以上の長尺を5本以上納品"
-    },
-    {
-     "label": "Chatworkでのやり取り"
-    },
-    {
-     "label": "無報酬の3分テスト"
-    }
-   ],
-   "id": "cw-matsukane"
+   "fetchedAt": "2026-09-27",
+   "firstSeen": "2026-10-05"
   },
   {
    "applicants": 31,
@@ -499,7 +367,8 @@
      "label": "週1〜2本の対応"
     }
    ],
-   "id": "cw-ueda"
+   "id": "cw-ueda",
+   "firstSeen": "2026-10-05"
   },
   {
    "applicants": 24,
@@ -540,7 +409,8 @@
      "label": "Premiere Pro（歓迎）"
     }
    ],
-   "id": "lc-bizlong"
+   "id": "lc-bizlong",
+   "firstSeen": "2026-10-05"
   },
   {
    "applicants": 36,
@@ -568,7 +438,8 @@
      "label": "1営業日以内の返信"
     }
    ],
-   "id": "lc-test15k"
+   "id": "lc-test15k",
+   "firstSeen": "2026-10-05"
   },
   {
    "applyUrl": "https://www.lancers.jp/work/detail/5607536",
@@ -607,7 +478,1337 @@
      "label": "3日以内の納品"
     }
    ],
-   "id": "lc-offline"
+   "id": "lc-offline",
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "applyUrl": "https://jp.indeed.com/viewjob?jk=1172bd75f6857c28",
+   "channel": null,
+   "company": "株式会社ミギナナメウエ",
+   "fetchedAt": "2026-09-28",
+   "group": "B",
+   "media": "Indeed",
+   "order": 18,
+   "summary": "社員インタビュー等の編集。テロップ・字幕、BGM・SE、サムネイル作成、修正対応。完全在宅。画角・尺・サムネ有無で単価は案件ごとに決定。",
+   "tanka": "1本18,000〜20,000円（目安・業務委託）",
+   "title": "採用広報YouTubeの動画編集（社員インタビュー等・横型15分程度）",
+   "requirements": [
+    {
+     "label": "動画編集経験1年以上"
+    },
+    {
+     "label": "案件として納品した経験"
+    },
+    {
+     "label": "サムネイル作成"
+    }
+   ],
+   "id": "in-1172bd75",
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "applyUrl": "https://jp.indeed.com/viewjob?jk=210554f006d7bc84",
+   "channel": null,
+   "company": "株式会社Bee Laboratory",
+   "fetchedAt": "2026-09-28",
+   "group": "B",
+   "media": "Indeed",
+   "order": 19,
+   "refVideos": [
+    {
+     "title": "参考アカウント（TikTok）",
+     "url": "https://www.tiktok.com/@skincare_behind"
+    },
+    {
+     "title": "参考アカウント（Instagram）",
+     "url": "https://www.instagram.com/tac.dr.yuji/"
+    },
+    {
+     "title": "参考アカウント（Instagram）",
+     "url": "https://www.instagram.com/sho_niimi"
+    },
+    {
+     "title": "参考アカウント（Instagram）",
+     "url": "https://www.instagram.com/norimoto.ijiri/"
+    }
+   ],
+   "summary": "大手含む複数業界のクライアントアカウントのショート編集。面談通過後は複数案件の依頼を確約。指定アカウントの編集を完コピできることが条件。",
+   "tanka": "1本2,500円以上（業務委託）",
+   "title": "クライアントのInstagram・TikTok用ショート動画編集（フルリモート）",
+   "requirements": [
+    {
+     "label": "Premiere Pro"
+    },
+    {
+     "label": "ショート動画の実績"
+    },
+    {
+     "label": "指定アカウントの完コピ"
+    }
+   ],
+   "id": "in-210554f0",
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "applyUrl": "https://jp.indeed.com/viewjob?jk=36e906d7151d7831",
+   "channel": null,
+   "company": "株式会社M&C Creation",
+   "fetchedAt": "2026-09-28",
+   "formQuestions": [
+    "簡単な自己紹介と編集歴（経歴も含めて）",
+    "専業or副業",
+    "受講した講座やスクール",
+    "PCスペック",
+    "実績や今までの納品本数、今他で受けてる案件数",
+    "リソースの目安（1週間あたり）",
+    "希望単価",
+    "自己PR"
+   ],
+   "group": "B",
+   "media": "Indeed",
+   "order": 20,
+   "summary": "YouTube・Instagram・TikTokを複数運営する会社の受託案件。月5本以上の発注あり。書類→面談→3分のテスト編集→本契約。※同社の世界一周クルーズ案件とは別の求人。",
+   "tanka": "1本8,500〜20,000円（業務委託）",
+   "title": "YouTube動画のカット・テロップ編集（ビジネス系／エンタメ系・15〜30分）",
+   "requirements": [
+    {
+     "label": "Premiere Pro"
+    },
+    {
+     "label": "修正対応を中1日で"
+    }
+   ],
+   "id": "in-36e906d7",
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "applyUrl": "https://jp.indeed.com/viewjob?jk=dad4800fcfa7913b",
+   "channel": null,
+   "company": "株式会社Bridge（LUXUWELL）",
+   "fetchedAt": "2026-09-28",
+   "group": "B",
+   "media": "Indeed",
+   "order": 21,
+   "summary": "日本各地で撮影済みのツアー素材を、Reels／TikTok／Shorts用に上質な雰囲気で仕上げる。総フォロワー8万人超のアカウント。リモート完結。撮影できれば別途加算。",
+   "tanka": "完全歩合制（レベルに応じて報酬を設定）",
+   "title": "訪日富裕層向けツアーブランドのSNSショート動画編集",
+   "requirements": [
+    {
+     "label": "ショート動画の編集経験"
+    },
+    {
+     "label": "上質・洗練されたトンマナの表現"
+    }
+   ],
+   "id": "in-dad4800f",
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "applicants": 2,
+   "applyUrl": "https://crowdworks.jp/public/jobs/13480604",
+   "channel": null,
+   "company": "個人の依頼主（講座販売・神社YouTube）",
+   "deadline": "10/9",
+   "fetchedAt": "2026-09-28",
+   "formQuestions": [
+    "簡単な自己紹介",
+    "動画編集の経験年数",
+    "横動画のポートフォリオ（YouTubeなど）"
+   ],
+   "group": "B",
+   "media": "クラウドワークス",
+   "order": 22,
+   "summary": "10月の講座販売開始に向けたVSLと受講生インタビュー、神社YouTubeのVlog。構成・台本・素材は支給。得意な種類だけでも可。参考動画のトンマナ再現を重視。テスト編集（1分程度）あり。",
+   "tanka": "VSL・受講生インタビュー 1本25,000〜30,000円／神社Vlog 1本5,000円",
+   "title": "横動画の編集（神社Vlog／セールス動画（VSL）／受講生インタビュー）",
+   "requirements": [
+    {
+     "label": "Premiere Proでの編集実績"
+    },
+    {
+     "label": "YouTubeなど横動画の編集経験"
+    },
+    {
+     "label": "日中にチャットで連絡"
+    }
+   ],
+   "id": "cw-13480604",
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "applicants": 4,
+   "applyUrl": "https://crowdworks.jp/public/jobs/13487865",
+   "channel": null,
+   "company": "個人の依頼主（新規YouTubeチャンネル）",
+   "deadline": "10/12",
+   "fetchedAt": "2026-09-28",
+   "group": "B",
+   "media": "クラウドワークス",
+   "order": 23,
+   "refVideos": [
+    {
+     "note": "募集文に「編集のトンマナはこの海外風チャンネルを参考に」と記載",
+     "title": "参考動画（海外風チャンネル）",
+     "url": "https://youtu.be/sneY4NEV9fs"
+    }
+   ],
+   "summary": "月5〜10本。フルテロップ、大事な所は海外風の動きのあるテロップ。BGM・SE・フリー素材は編集者が用意。素材から10日以内。応募時に見積もり金額を入力。",
+   "tanka": "1本15,000円（税込・10分まで）＋10分以降1分ごと1,000円",
+   "title": "新規YouTubeチャンネルの編集（完成10〜20分・海外風の動くテロップ）",
+   "requirements": [
+    {
+     "label": "Premiere Pro／After Effects",
+     "note": "After Effectsはプロフィール外"
+    },
+    {
+     "label": "専業での編集経験"
+    }
+   ],
+   "id": "cw-13487865",
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "applicants": 5,
+   "applyUrl": "https://crowdworks.jp/public/jobs/13488671",
+   "channel": null,
+   "company": "個人の依頼主（YouTube・週1本）",
+   "deadline": "10/12",
+   "fetchedAt": "2026-09-28",
+   "formQuestions": [
+    "簡単な自己紹介",
+    "本業か副業か",
+    "動画編集歴",
+    "週に作業可能な時間",
+    "フリー画像サイトの有料会員かどうか",
+    "ポートフォリオ",
+    "〜20分、〜25分、〜30分、それ以降の5分ごとの編集料金"
+   ],
+   "group": "B",
+   "media": "クラウドワークス",
+   "order": 24,
+   "refVideos": [
+    {
+     "note": "「当方のchではありません」と記載",
+     "title": "参考動画1",
+     "url": "https://www.youtube.com/watch?v=BBEC-3oWR1I"
+    },
+    {
+     "title": "参考動画2",
+     "url": "https://www.youtube.com/watch?v=HXQjrd5UyMs"
+    }
+   ],
+   "summary": "カット・テロップ・BGM/SE・素材集め。過去動画のテイストに合わせる。素材受け渡しから5日以内（厳守）。週1本程度。",
+   "tanka": "テスト1本3,000円 → 継続1本9,000円〜（尺に応じて増額）",
+   "title": "YouTube動画の継続編集（完成30分程度・45分超もあり）",
+   "requirements": [
+    {
+     "label": "5日以内の納品"
+    },
+    {
+     "label": "フリー画像サイトの有料会員"
+    }
+   ],
+   "id": "cw-13488671",
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "applicants": 3,
+   "applyUrl": "https://crowdworks.jp/public/jobs/13481982",
+   "channel": null,
+   "company": "個人の依頼主（ストーリー系ビジネスYouTube）",
+   "fetchedAt": "2026-09-28",
+   "group": "B",
+   "media": "クラウドワークス",
+   "order": 25,
+   "summary": "会社・仕事・社会がテーマの実写ベース。テロップ・図解・生成AI素材・BGM/SE。既存フォーマットを理解して演出を提案できる人。チームプロジェクト使用。",
+   "tanka": "時給4,000円〜（契約金額4,662円）",
+   "title": "ストーリー仕立てのビジネス・エンタメ系YouTubeの編集（図解・生成AI素材あり）",
+   "requirements": [
+    {
+     "label": "Premiere Pro（チームプロジェクト）"
+    },
+    {
+     "label": "生成AIでの画像・動画生成"
+    },
+    {
+     "label": "月20〜30時間以上（歓迎）"
+    }
+   ],
+   "id": "cw-13481982",
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "applicants": 8,
+   "applyUrl": "https://crowdworks.jp/public/jobs/13485465",
+   "channel": null,
+   "company": "個人の依頼主（旅系YouTube）",
+   "deadline": "10/12",
+   "fetchedAt": "2026-09-28",
+   "formQuestions": [
+    "お名前（フルネーム）",
+    "現在のご年齢",
+    "今までのご経歴と現在の職業",
+    "制作実績・ポートフォリオ",
+    "最終学歴",
+    "現在のお住まい（都道府県）",
+    "業務開始可能日",
+    "日本橋オフィスへの出社可否（必須ではない）"
+   ],
+   "group": "B",
+   "media": "クラウドワークス",
+   "order": 26,
+   "summary": "カット〜テロップ・SE・アバン・スーパー。月5本以上の継続前提。台本・脚本やサムネ経験は歓迎。※応募時に年齢・最終学歴・住所（都道府県）などの記入を求められる。",
+   "tanka": "1本30,000円（税込・30分程度）＋10分ごと1万円・再生数ボーナスあり",
+   "title": "旅系YouTubeの編集（30分程度・アバン／スーパー制作まで）",
+   "requirements": [
+    {
+     "label": "YouTubeの編集経験"
+    },
+    {
+     "label": "月5本以上の継続"
+    },
+    {
+     "label": "応募時の個人情報の記入",
+     "note": "年齢・学歴・住所の都道府県など。出す範囲は自分で判断"
+    }
+   ],
+   "id": "cw-13485465",
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "applicants": 108,
+   "applyUrl": "https://www.lancers.jp/work/detail/5606044",
+   "channel": null,
+   "company": "山口県の工務店（依頼主名はランサーズで確認）",
+   "fetchedAt": "2026-09-28",
+   "group": "B",
+   "media": "ランサーズ",
+   "order": 27,
+   "summary": "住宅ルームツアー（10〜15分）と代表の解説（10分）＋縦型ショート。落ち着いた空気感重視、テロップは要所のみ。1本目で型を一緒に作る。素材から7日以内。月1本〜。",
+   "tanka": "フル動画 1本目20,000〜50,000円／2本目以降15,000〜30,000円、ショート1本3,000〜5,000円",
+   "title": "工務店YouTubeのルームツアー・解説動画の編集（ショート切り出しあり）",
+   "requirements": [
+    {
+     "label": "Premiere Pro（プロジェクトファイル納品可なら尚可）"
+    },
+    {
+     "label": "カラー補正"
+    }
+   ],
+   "id": "lc-5606044",
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "cw-13504574",
+   "auto": true,
+   "media": "クラウドワークス",
+   "group": "B",
+   "company": "クラウドワークスの依頼主",
+   "title": "【急募 / 長期契約希望】Instagramのリール動画の編集をお願いいたします。",
+   "tanka": "5,000円〜10,000円（固定報酬）",
+   "summary": "※巷で流行っている、「研修料で80万円です！」などの加入は一切ありませんので、ご安心ください！ 【 依頼内容 】 ・ビジネス系のInstagramリールの編集業務をお願いいたします。 ・Instagramを1アカウント新…",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": 0,
+   "deadline": "10/6",
+   "applyUrl": "https://crowdworks.jp/public/jobs/13504574",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "2026-10-05",
+   "channel": null,
+   "order": 1000,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "cw-13457828",
+   "auto": true,
+   "media": "クラウドワークス",
+   "group": "B",
+   "company": "クラウドワークスの依頼主",
+   "title": "【運動不足解消/ズボラトレ】YouTubeショート・TikTok・Instagramリール動画編集者募集！素材・台本あり",
+   "tanka": "10,000円〜30,000円（固定報酬）",
+   "summary": "ご覧いただきありがとうございます。 「三日坊主にならずに続けられる運動」 「運動不足解消・ズボラトレ」 を発信するSNSメディア（YouTubeショート／Instagramリール／TikTok）の運用に伴い、ショート動画…",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": 31,
+   "deadline": "10/9",
+   "applyUrl": "https://crowdworks.jp/public/jobs/13457828",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "2026-10-04",
+   "channel": null,
+   "order": 1001,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "cw-13504429",
+   "auto": true,
+   "media": "クラウドワークス",
+   "group": "B",
+   "company": "クラウドワークスの依頼主",
+   "title": "💄【美容好き歓迎】Instagramショート動画制作スタッフ募集！",
+   "tanka": "5,000円〜10,000円（固定報酬）",
+   "summary": "Instagramショート動画制作スタッフ募集！ Instagramショート動画の制作を一緒にお手伝いしてくれる方を募集しています！ 「美容やスキンケアに関する発信をしてみたい」 「コスメやメイク、美容に関する動画を見る…",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": 6,
+   "deadline": "10/9",
+   "applyUrl": "https://crowdworks.jp/public/jobs/13504429",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "2026-10-04",
+   "channel": null,
+   "order": 1002,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "cw-13457930",
+   "auto": true,
+   "media": "クラウドワークス",
+   "group": "B",
+   "company": "クラウドワークスの依頼主",
+   "title": "【丁寧さを重視します】スタバやカフェが好きな方へ☕｜カフェ系SNSショート動画編集｜素材あり◎",
+   "tanka": "10,000円〜30,000円（固定報酬）",
+   "summary": "☕カフェ好きさん歓迎！ InstagramなどSNSで 「おしゃれなカフェ動画、つい最後まで見ちゃう」 そんな方にぴったりのお仕事です。 お願いしたいのは、 カフェ・スイーツ・お店紹介系のショート動画編集です...",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": 53,
+   "deadline": "10/9",
+   "applyUrl": "https://crowdworks.jp/public/jobs/13457930",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "2026-10-04",
+   "channel": null,
+   "order": 1003,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "cw-13504401",
+   "auto": true,
+   "media": "クラウドワークス",
+   "group": "B",
+   "company": "クラウドワークスの依頼主",
+   "title": "【長期継続依頼あり◎】Instagramショート動画編集｜これまでの編集経験を活かしたい方を歓迎します✨",
+   "tanka": "10,000円〜30,000円（固定報酬）",
+   "summary": "ご覧いただきありがとうございます！ Instagramで発信するショート動画の編集をお任せできる方を募集しています！ 今回お願いしたいのは、美容・日常・ライフスタイルなど、様々なジャンルのInstagramショート動画.…",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": 9,
+   "deadline": "10/9",
+   "applyUrl": "https://crowdworks.jp/public/jobs/13504401",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "2026-10-04",
+   "channel": null,
+   "order": 1004,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "cw-13455448",
+   "auto": true,
+   "media": "クラウドワークス",
+   "group": "B",
+   "company": "クラウドワークスの依頼主",
+   "title": "【経験よりも丁寧さを重視します！】何気ない日常を素敵な動画に ✨Instagramリール動画編集者募集",
+   "tanka": "10,000円〜30,000円（固定報酬）",
+   "summary": "ご覧いただきありがとうございます！ 朝のコーヒー、街を歩く時間、仕事終わりの夕暮れ、休日のちょっとしたお出かけ。 そんな何気ない日常の一コマをInstagramで発信し、 「なんだか癒される」「自分もこんな時間を過ご..…",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": 28,
+   "deadline": "10/9",
+   "applyUrl": "https://crowdworks.jp/public/jobs/13455448",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "2026-10-04",
+   "channel": null,
+   "order": 1005,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "cw-13448535",
+   "auto": true,
+   "media": "クラウドワークス",
+   "group": "B",
+   "company": "クラウドワークスの依頼主",
+   "title": "【在宅・リモート◎】不動産PR｜物件紹介ショート動画のお仕事",
+   "tanka": "10,000円〜30,000円（固定報酬）",
+   "summary": "ご覧いただきありがとうございます✨ マンション・戸建て・デザイン住宅・リノベーション物件など、住まいや暮らしに関する情報を発信するSNSアカウントのショート動画編集をお任せできる方を募集しています。 ⸻ ⸻ ⸻ ⸻ ⸻ …",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": 44,
+   "deadline": "10/11",
+   "applyUrl": "https://crowdworks.jp/public/jobs/13448535",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "2026-10-04",
+   "channel": null,
+   "order": 1006,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "cw-13479685",
+   "auto": true,
+   "media": "クラウドワークス",
+   "group": "B",
+   "company": "クラウドワークスの依頼主",
+   "title": "【非日常のときめきを映像でデザインする🌿】ホテルステイ動画編集メンバー募集！",
+   "tanka": "10,000円〜30,000円（固定報酬）",
+   "summary": "ご覧いただきありがとうございます！ 現在、ホテルや宿泊施設の魅力を発信するSNSアカウントを運営しています✈️✨ 今回、そのアカウントで投稿するホテルステイVlog・ショート動画の編集をお手伝いいただける方を募集していま…",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": 11,
+   "deadline": "10/9",
+   "applyUrl": "https://crowdworks.jp/public/jobs/13479685",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "2026-10-04",
+   "channel": null,
+   "order": 1007,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "cw-13407063",
+   "auto": true,
+   "media": "クラウドワークス",
+   "group": "B",
+   "company": "クラウドワークスの依頼主",
+   "title": "《新しいスキルに挑戦✨》動画編集×SNSマーケティング｜カフェ店舗PRショート動画制作",
+   "tanka": "10,000円〜30,000円（固定報酬）",
+   "summary": "ご覧いただきありがとうございます！ 「今の仕事にプラスして、新しいスキルを身につけたい」 そんな方に向けた、カフェ店舗PRのショート動画編集案件です✨ 今回は、店内の雰囲気やメニュー、ドリンク、スイーツなど、カフェの魅力…",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": 33,
+   "deadline": "10/11",
+   "applyUrl": "https://crowdworks.jp/public/jobs/13407063",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "2026-10-04",
+   "channel": null,
+   "order": 1008,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "cw-13504337",
+   "auto": true,
+   "media": "クラウドワークス",
+   "group": "B",
+   "company": "クラウドワークスの依頼主",
+   "title": "【お部屋探し用のショート動画編集】一人暮らしで住みたいお部屋紹介🛋副業の方もOK🎗",
+   "tanka": "契約金額は相談",
+   "summary": "＼一人暮らしにおすすめのお部屋探しに関するショート動画編集者募集／ このページをご覧いただきありがとうございます！ 一緒にお仕事ができると嬉しいです✨ ✅「副業として動画編集を始めてみたい」 ✅「フリーランスを目指して.…",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": 16,
+   "deadline": "10/9",
+   "applyUrl": "https://crowdworks.jp/public/jobs/13504337",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "2026-10-04",
+   "channel": null,
+   "order": 1009,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "cw-13504333",
+   "auto": true,
+   "media": "クラウドワークス",
+   "group": "B",
+   "company": "クラウドワークスの依頼主",
+   "title": "【急募】【月に10万円以上の報酬可能！】YouTubeチャンネル動画編集・ディレクター候補募集【長期契約・経験者の方のみ】",
+   "tanka": "30,000円〜50,000円（固定報酬）",
+   "summary": "この度は当案件をご覧いただきありがとうございます。 YouTubeチャンネルの動画編集をしていただける方を募集いたします。 長期的にお付き合いいただける方を希望しております。 動画編集のスキルや稼働状況によっては、将来的…",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": 2,
+   "deadline": "10/11",
+   "applyUrl": "https://crowdworks.jp/public/jobs/13504333",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "2026-10-04",
+   "channel": null,
+   "order": 1010,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "cw-13504240",
+   "auto": true,
+   "media": "クラウドワークス",
+   "group": "B",
+   "company": "クラウドワークスの依頼主",
+   "title": "【長期継続・単価アップあり】YouTube長尺動画編集｜1本5,000円〜｜Premiere Pro限定",
+   "tanka": "1本5,000円〜（募集タイトルより）",
+   "summary": "【継続依頼・単価アップあり】新規YouTubeチャンネルの長尺動画編集者募集｜Premiere Pro 新規YouTubeチャンネルの立ち上げに伴い、長期的に一緒に動画を制作していただける編集者さんを募集します！ お願い…",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": 3,
+   "deadline": "10/18",
+   "applyUrl": "https://crowdworks.jp/public/jobs/13504240",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "2026-10-04",
+   "channel": null,
+   "order": 1011,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "cw-13504217",
+   "auto": true,
+   "media": "クラウドワークス",
+   "group": "B",
+   "company": "クラウドワークスの依頼主",
+   "title": "急募！！【1本平均15000円】【継続案件】ドキュメンタリー系Youtube動画編集できる方募集！",
+   "tanka": "10,000円〜30,000円（固定報酬）",
+   "summary": "たくさんのご応募の中から弊社のお仕事を ご覧いただきありがとうございます。 今回の募集は【継続案件】です。 毎月定期的な動画制作のご依頼を予定しておりますので 是非ご応募いただければと思います。 弊社では数多くの案件..…",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": 2,
+   "deadline": "10/18",
+   "applyUrl": "https://crowdworks.jp/public/jobs/13504217",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "2026-10-04",
+   "channel": null,
+   "order": 1012,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "cw-13504211",
+   "auto": true,
+   "media": "クラウドワークス",
+   "group": "B",
+   "company": "クラウドワークスの依頼主",
+   "title": "スロットの動画をYouTube用に編集をお願いしたいです。",
+   "tanka": "契約金額は相談",
+   "summary": "書き方の例） 【 依頼内容 】 美容系YouTube動画の編集業務をお願いいたします。 【 作業ボリューム 】 月◯本程度 など 【 納期 】 ◯月◯日まで / 相談して決めたい 【 契約金額(税抜) 】...",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": 5,
+   "deadline": "10/11",
+   "applyUrl": "https://crowdworks.jp/public/jobs/13504211",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "2026-10-04",
+   "channel": null,
+   "order": 1013,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "cw-13504155",
+   "auto": true,
+   "media": "クラウドワークス",
+   "group": "B",
+   "company": "クラウドワークスの依頼主",
+   "title": "🏃‍♀️🏃‍♀️✈️Vlog動画を編集をしてくださる方を募集いたします！",
+   "tanka": "契約金額は相談",
+   "summary": "長期的に動画編集を作成してくださる方募集！ アカウントを一緒に盛り上げていきませんか？ ーーーーーーーーーーーーーーーーーーーーーーー 数ある募集の中からこちらをご覧いただき、ありがとうございます！ フリーランスでディ.…",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": 2,
+   "deadline": "10/9",
+   "applyUrl": "https://crowdworks.jp/public/jobs/13504155",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "2026-10-04",
+   "channel": null,
+   "order": 1014,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "cw-13504133",
+   "auto": true,
+   "media": "クラウドワークス",
+   "group": "B",
+   "company": "クラウドワークスの依頼主",
+   "title": "🍞パン屋さんの紹介をするリール動画作成者さん募集！！【マニュアルあり！】",
+   "tanka": "10,000円〜30,000円（固定報酬）",
+   "summary": "＼パン好きさん・動画編集好きさん、注目です！／ 都内にあるパン屋さんの魅力をギュッと詰め込んだ、Instagramリール動画の制作をお任せできる方を募集中です！ 美味しそうなパンとおしゃれな雰囲気を伝える、見ていてワクワ…",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": 18,
+   "deadline": "10/10",
+   "applyUrl": "https://crowdworks.jp/public/jobs/13504133",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "2026-10-04",
+   "channel": null,
+   "order": 1015,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "cw-13504039",
+   "auto": true,
+   "media": "クラウドワークス",
+   "group": "B",
+   "company": "クラウドワークスの依頼主",
+   "title": "【フルリモート】Instagram動画作成スタッフ募集",
+   "tanka": "30,000円〜50,000円（固定報酬）",
+   "summary": "ご覧いただきありがとうございます！ Webメディアやブランドの魅力を届ける、リール動画制作のパートナーを募集します。 クリエイティブな表現を通じて、ブランドの世界観を一緒に発信していきませんか？ ◎本案件の魅力 ・...",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": 12,
+   "deadline": "10/8",
+   "applyUrl": "https://crowdworks.jp/public/jobs/13504039",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "2026-10-04",
+   "channel": null,
+   "order": 1016,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "cw-13397812",
+   "auto": true,
+   "media": "クラウドワークス",
+   "group": "B",
+   "company": "クラウドワークスの依頼主",
+   "title": "\\美容が好きな方へ✨/美容クリニックPR動画の編集メンバー募集◎",
+   "tanka": "10,000円〜30,000円（固定報酬）",
+   "summary": "数ある案件の中からご覧いただきありがとうございます！ 美容クリニックの魅力を発信するSNSアカウントの動画編集をお手伝いいただけるメンバーを募集しています💄✨ 「美容が好き！」 「動画編集に興味がある！」 「これから動.…",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": 27,
+   "deadline": "10/11",
+   "applyUrl": "https://crowdworks.jp/public/jobs/13397812",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "2026-10-04",
+   "channel": null,
+   "order": 1017,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "cw-13503998",
+   "auto": true,
+   "media": "クラウドワークス",
+   "group": "B",
+   "company": "クラウドワークスの依頼主",
+   "title": "【Meta広告経験者限定】EC/D2C商品の縦型広告動画クリエイター募集｜有料テスト・継続あり",
+   "tanka": "契約金額は相談",
+   "summary": "【 依頼内容 】 ウイスキー関連の商品を扱うECブランドのMeta広告（Instagram / Facebook）用動画の制作をお願いいたします。 15〜30秒程度の縦型広告動画を想定しています。 台本・訴求内容・素材は…",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": 5,
+   "deadline": "10/18",
+   "applyUrl": "https://crowdworks.jp/public/jobs/13503998",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "2026-10-04",
+   "channel": null,
+   "order": 1018,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "cw-13481562",
+   "auto": true,
+   "media": "クラウドワークス",
+   "group": "B",
+   "company": "クラウドワークスの依頼主",
+   "title": "今トレンド発信する✨｜カフェ店舗のSNSショート動画編集！",
+   "tanka": "10,000円〜30,000円（固定報酬）",
+   "summary": "ご覧いただきありがとうございます！ 今回お願いするのは、カフェやスイーツ、話題のお店などを紹介するショート動画の編集。 新作メニューや人気スイーツ、店内の雰囲気など、素材の魅力を切り取り、SNSを見た方が「ここ行ってみた…",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": 42,
+   "deadline": "10/11",
+   "applyUrl": "https://crowdworks.jp/public/jobs/13481562",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "2026-10-04",
+   "channel": null,
+   "order": 1019,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "cw-13503880",
+   "auto": true,
+   "media": "クラウドワークス",
+   "group": "B",
+   "company": "クラウドワークスの依頼主",
+   "title": "【20代向け】ファッション×SNS👗｜トレンドコーデを届けるショート動画制作🎥",
+   "tanka": "10,000円〜30,000円（固定報酬）",
+   "summary": "ご覧いただきありがとうございます！ 私は現在、関東を拠点にフリーランスとして活動しています。 私自身、女性としてこれからのキャリアや働き方に悩んだ経験があり、「自分らしい働き方を見つけたい」という想いから独立しました。 …",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": 9,
+   "deadline": "10/9",
+   "applyUrl": "https://crowdworks.jp/public/jobs/13503880",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "2026-10-04",
+   "channel": null,
+   "order": 1020,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "cw-13503747",
+   "auto": true,
+   "media": "クラウドワークス",
+   "group": "B",
+   "company": "クラウドワークスの依頼主",
+   "title": "「いつか自由に旅したい✨」を仕事につなげる｜一人旅Vlogショート動画編集",
+   "tanka": "10,000円〜30,000円（固定報酬）",
+   "summary": "ご覧いただきありがとうございます！ 「仕事は頑張っているけれど、この先も今の働き方を続けていくのかな」 「今のうちに、これからに活かせるスキルを身につけたい」 そんなふうに感じることがある方へ。 今回は、一人旅の魅力を.…",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": 14,
+   "deadline": "10/11",
+   "applyUrl": "https://crowdworks.jp/public/jobs/13503747",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "2026-10-04",
+   "channel": null,
+   "order": 1021,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "cw-13503705",
+   "auto": true,
+   "media": "クラウドワークス",
+   "group": "B",
+   "company": "クラウドワークスの依頼主",
+   "title": "自宅でできるセルフケア（顔〜全身）の動画編集",
+   "tanka": "5,000円〜10,000円（固定報酬）",
+   "summary": "書き方の例） 【 依頼内容 】 セルフマッサージ動画の編集業務をお願いいたします。 【 作業ボリューム 】 月2動画程度 【 納期 】 10月31日まで / 相談して決めたい 【 契約金額(税抜) 】 ...",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": 15,
+   "deadline": "10/18",
+   "applyUrl": "https://crowdworks.jp/public/jobs/13503705",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "2026-10-04",
+   "channel": null,
+   "order": 1022,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "cw-13503701",
+   "auto": true,
+   "media": "クラウドワークス",
+   "group": "B",
+   "company": "クラウドワークスの依頼主",
+   "title": "【恋愛系Instagram｜トークリールの編集をお任せしたい方を募集します】",
+   "tanka": "10,000円〜30,000円（固定報酬）",
+   "summary": "━━━━━━━━━━━━━━━━ ■ はじめに ━━━━━━━━━━━━━━━━ ご覧いただきありがとうございます。 恋愛に関するノウハウ・ティップス・アドバイスを発信しているInstagramアカウントを運営しており.…",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": 20,
+   "deadline": "10/18",
+   "applyUrl": "https://crowdworks.jp/public/jobs/13503701",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "2026-10-04",
+   "channel": null,
+   "order": 1023,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "cw-13503692",
+   "auto": true,
+   "media": "クラウドワークス",
+   "group": "B",
+   "company": "クラウドワークスの依頼主",
+   "title": "🔰低単価案件にサヨナラ🔰動画編集スキルを活かしてSNS運用の世界へ！パートナー募集",
+   "tanka": "30,000円〜50,000円（固定報酬）",
+   "summary": "低単価のカット・テロップ作業に追われ、もっとクリエイティブな仕事がしたいと悩んでいませんか？あなたの動画編集スキルは、SNS運用の世界で輝く大きな武器になります。 未経験でも「学びながら実践」できる環境で、あなたのスキル…",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": 1,
+   "deadline": "10/18",
+   "applyUrl": "https://crowdworks.jp/public/jobs/13503692",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "2026-10-04",
+   "channel": null,
+   "order": 1024,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "cw-13472598",
+   "auto": true,
+   "media": "クラウドワークス",
+   "group": "B",
+   "company": "クラウドワークスの依頼主",
+   "title": "20代に気になる美容を届ける✨｜美容クリニックのSNSショート動画編集",
+   "tanka": "10,000円〜30,000円（固定報酬）",
+   "summary": "ご覧いただきありがとうございます！ InstagramやTikTokで美容情報をチェックしたり、気になる施術について調べたりすることが好きな方へ。 今回お願いするのは、美容クリニックの施術や雰囲気、人気メニューなどを紹介…",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": 25,
+   "deadline": "10/11",
+   "applyUrl": "https://crowdworks.jp/public/jobs/13472598",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "2026-10-04",
+   "channel": null,
+   "order": 1025,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "cw-13503549",
+   "auto": true,
+   "media": "クラウドワークス",
+   "group": "B",
+   "company": "クラウドワークスの依頼主",
+   "title": "【動画編集経験者募集・マニュアル作成あり】海外の反応系YouTube動画編集｜15～20分",
+   "tanka": "10,000円〜30,000円（固定報酬）",
+   "summary": "ご覧いただきありがとうございます。 海外の反応系YouTubeチャンネルの新規立ち上げのため、動画編集者の方を募集します。 こちらから台本と元動画のURLをお渡ししますので、台本に沿って15～20分程度の動画を編集してい…",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": 7,
+   "deadline": "10/12",
+   "applyUrl": "https://crowdworks.jp/public/jobs/13503549",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "2026-10-04",
+   "channel": null,
+   "order": 1026,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "cw-13503536",
+   "auto": true,
+   "media": "クラウドワークス",
+   "group": "B",
+   "company": "クラウドワークスの依頼主",
+   "title": "動画編集者募集｜企業紹介動画の制作業務",
+   "tanka": "契約金額は相談",
+   "summary": "はじめまして！ 企業サービス紹介動画の編集をお手伝いいただける方を募集しております。 【業務内容】 ・15〜60秒の動画編集 ・カット／テロップ／BGM挿入 ・色味や簡単な演出調整 ※素材はすべてこちらで用意いたし...",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": 16,
+   "deadline": "10/9",
+   "applyUrl": "https://crowdworks.jp/public/jobs/13503536",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "2026-10-04",
+   "channel": null,
+   "order": 1027,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "cw-13503501",
+   "auto": true,
+   "media": "クラウドワークス",
+   "group": "B",
+   "company": "クラウドワークスの依頼主",
+   "title": "【継続前提】レシピ動画の動画編集をしてくださる方を募集(YouTube・10分前後)",
+   "tanka": "10,000円〜30,000円（固定報酬）",
+   "summary": "はじめまして。ご覧いただきありがとうございます。 プロの料理人が家庭で作れるレシピを紹介するYouTube動画の編集をお願いできる方を募集します。 まずは1本お願いし、双方問題なければ継続してご依頼したいと考えています。…",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": 12,
+   "deadline": "10/8",
+   "applyUrl": "https://crowdworks.jp/public/jobs/13503501",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "2026-10-04",
+   "channel": null,
+   "order": 1028,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "lc-5611749",
+   "auto": true,
+   "media": "ランサーズ",
+   "group": "B",
+   "company": "ランサーズの依頼主",
+   "title": "【婚活動画編集】週3本のYouTube動画を編集してくれる方募集！",
+   "tanka": "10,000円〜20,000円（固定報酬）",
+   "summary": "【依頼概要】 婚活系のYouTubeチャンネルを運営しています。 20〜25分の素材を編集して15~20分くらいの動画にして欲しいです。 【業務内容】Youtube動画の編集 【依頼件数】週3本の動画編集、既存の動画と同…",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": null,
+   "deadline": "",
+   "applyUrl": "https://www.lancers.jp/work/detail/5611749",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "",
+   "channel": null,
+   "order": 1029,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "lc-5611690",
+   "auto": true,
+   "media": "ランサーズ",
+   "group": "B",
+   "company": "ランサーズの依頼主",
+   "title": "【1本5,000円】ビジネス動画の編集",
+   "tanka": "1本5,000円〜（募集タイトルより）",
+   "summary": "■ 依頼概要 ビジネス系動画編集のお仕事依頼です ■ 依頼詳細（ボリュームなど） 話している内容が分かり易いよう左上に肩テロップを出して 今何について話しているかを表示して伝わりやすい動画にして頂きたいです。 スケールサ…",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": null,
+   "deadline": "",
+   "applyUrl": "https://www.lancers.jp/work/detail/5611690",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "",
+   "channel": null,
+   "order": 1030,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "lc-5611352",
+   "auto": true,
+   "media": "ランサーズ",
+   "group": "B",
+   "company": "ランサーズの依頼主",
+   "title": "【動画編集者募集】Instagramリール・TikTok動画の編集経験者歓迎！",
+   "tanka": "5,000円〜10,000円（固定報酬）",
+   "summary": "【依頼概要】 【 概要 】 チャンネルを共に伸ばしていけるような動画編集者を募集しています。 Instagramリール、TikTok動画のノウハウをお持ちの方、提案力のある方が望ましいです。 主な依頼内容ですが、Inst…",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": null,
+   "deadline": "",
+   "applyUrl": "https://www.lancers.jp/work/detail/5611352",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "",
+   "channel": null,
+   "order": 1031,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "lc-5611350",
+   "auto": true,
+   "media": "ランサーズ",
+   "group": "B",
+   "company": "ランサーズの依頼主",
+   "title": "【動画編集者募集】YouTubeチャンネルを共に成長させましょう！",
+   "tanka": "5,000円〜10,000円（固定報酬）",
+   "summary": "【依頼概要】 【 概要 】 チャンネルを共に伸ばしていけるような動画編集者を募集しています。 YouTube動画のノウハウをお持ちの方、提案力のある方が望ましいです。 主な依頼内容ですが、YouTubeにアップする用の動…",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": null,
+   "deadline": "",
+   "applyUrl": "https://www.lancers.jp/work/detail/5611350",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "",
+   "channel": null,
+   "order": 1032,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "lc-5611325",
+   "auto": true,
+   "media": "ランサーズ",
+   "group": "B",
+   "company": "ランサーズの依頼主",
+   "title": "製造・建築の現場経験×生成AI|安全教育のショート動画を一緒につくる方募集(在宅・チェック役も)",
+   "tanka": "5,000円〜10,000円（固定報酬）",
+   "summary": "■ 依頼の目的・背景 こんにちは!DONDO Communicationです。 「現場の事故を、短い縦型動画で伝えたい」 そんな教材づくりをしていて、一緒に作ってくれる方を探しています。 ◆なぜこの仕事をしているのか 自…",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": null,
+   "deadline": "",
+   "applyUrl": "https://www.lancers.jp/work/detail/5611325",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "",
+   "channel": null,
+   "order": 1033,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "lc-5611135",
+   "auto": true,
+   "media": "ランサーズ",
+   "group": "B",
+   "company": "ランサーズの依頼主",
+   "title": "【当チームのお仕事を手伝ってくださる動画編集者さんを募集します！ビジネス系動画・広告動画など】",
+   "tanka": "5,000円〜10,000円（固定報酬）",
+   "summary": "ご覧いただきありがとうございます。 当チームのお仕事を手伝っていただける動画編集者さんを募集いたします。 ■ 依頼概要 ビジネス系長尺動画・広告動画など ■ ご依頼想定金額(税込) 広告動画(60秒)：2,000-10,…",
+   "requirements": [
+    {
+     "label": "レギュラーランク以上が必要"
+    }
+   ],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": null,
+   "deadline": "",
+   "applyUrl": "https://www.lancers.jp/work/detail/5611135",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "",
+   "channel": null,
+   "order": 1034,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "lc-5610957",
+   "auto": true,
+   "media": "ランサーズ",
+   "group": "B",
+   "company": "ランサーズの依頼主",
+   "title": "【1本8,000円〜】高単価｜登録者1万人のビジネス系チャンネルの編集者さん募集",
+   "tanka": "1本8,000円〜（募集タイトルより）",
+   "summary": "はじめまして。 登録者数1万人超えの物販ビジネス系チャンネル「朝野拓也」の動画編集者を募集しています。 ◼︎チャンネルについて 物販・せどり・副業など、「在宅で収入を得たい方」向けに、 現役講師・朝野拓也が実践的なノウハ…",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": null,
+   "deadline": "",
+   "applyUrl": "https://www.lancers.jp/work/detail/5610957",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "",
+   "channel": null,
+   "order": 1035,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "lc-5610875",
+   "auto": true,
+   "media": "ランサーズ",
+   "group": "B",
+   "company": "ランサーズの依頼主",
+   "title": "ショート動画編集者の募集｜在宅OK｜継続案件あり",
+   "tanka": "10,000円〜20,000円（固定報酬）",
+   "summary": "初めまして！ ご応募いただきありがとうございます。 新しくチャンネル開設し、動画投稿をする予定です。 経験の有無は問いませんが、前向きに取り組んでいける方を歓迎いたします！ ■ 業務内容 制作内容：1分前後の短尺動画編集…",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": null,
+   "deadline": "",
+   "applyUrl": "https://www.lancers.jp/work/detail/5610875",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "",
+   "channel": null,
+   "order": 1036,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "lc-5610831",
+   "auto": true,
+   "media": "ランサーズ",
+   "group": "B",
+   "company": "ランサーズの依頼主",
+   "title": "【1本8,000円】ビジネス系YouTube動画の編集をお願いします！（継続対応いただける方優遇）",
+   "tanka": "1本8,000円〜（募集タイトルより）",
+   "summary": "【依頼概要】 建築業者のYouTubeチャンネルの動画編集をお願いします。 当案件に継続対応いただける方を優遇します。 依頼内容は下記のとおりです。 ✅素材尺:10~25分 ✅完成尺:5~25分 ✅報酬: 完成尺:5~9…",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": null,
+   "deadline": "",
+   "applyUrl": "https://www.lancers.jp/work/detail/5610831",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "",
+   "channel": null,
+   "order": 1037,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "lc-5610745",
+   "auto": true,
+   "media": "ランサーズ",
+   "group": "B",
+   "company": "ランサーズの依頼主",
+   "title": "【東京タワーを一望／月24万〜】上場グループでAIを使うSNSショート動画編集パートナー",
+   "tanka": "200,000円〜300,000円（固定報酬）",
+   "summary": "数ある中からこちらのページをご覧いただき、ありがとうございます。 ◆ 募集の背景 SNS向けのショート動画を、制作からマーケティングまで手がけているチームです。 案件が増えていくなかで、映像の質を落とさずにスピードを保て…",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": null,
+   "deadline": "",
+   "applyUrl": "https://www.lancers.jp/work/detail/5610745",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "",
+   "channel": null,
+   "order": 1038,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "lc-5610741",
+   "auto": true,
+   "media": "ランサーズ",
+   "group": "B",
+   "company": "ランサーズの依頼主",
+   "title": "【総再生15億回超】全国ロケで撮る、SNS動画の企画〜撮影ディレクター｜月33万〜",
+   "tanka": "300,000円〜500,000円（固定報酬）",
+   "summary": "数ある中からこちらのページをご覧いただき、ありがとうございます。 ■ このポジションについて TikTok・Instagram・YouTubeを軸に、企業のSNSマーケティングを支援しているクリエイティブチームです。 お…",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": null,
+   "deadline": "",
+   "applyUrl": "https://www.lancers.jp/work/detail/5610741",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "",
+   "channel": null,
+   "order": 1039,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "lc-5610661",
+   "auto": true,
+   "media": "ランサーズ",
+   "group": "B",
+   "company": "ランサーズの依頼主",
+   "title": "<京都>婚礼の記録動画＋編集",
+   "tanka": "50,000円〜100,000円（固定報酬）",
+   "summary": "■ 依頼の目的・背景 10月10日午後、婚礼二次会のみ、記録動画撮影のスタッフを募集します。 〈案件の詳細〉 京都駅周辺のレストランにて、動画撮影＆編集をお願いいたします。 基本的に120分弱ですが、開始1時間前に現場到…",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": null,
+   "deadline": "",
+   "applyUrl": "https://www.lancers.jp/work/detail/5610661",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "",
+   "channel": null,
+   "order": 1040,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "lc-5610566",
+   "auto": true,
+   "media": "ランサーズ",
+   "group": "B",
+   "company": "ランサーズの依頼主",
+   "title": "【動画制作】可愛い背景で楽曲を歌うTikTok動画を作りたい！",
+   "tanka": "50,000円〜100,000円（固定報酬）",
+   "summary": "【依頼概要】 AIで制作した楽曲や作曲家が作った楽曲を、可愛い背景や服装で歌う動画を作りたいと思っています。服は自分でデザインしたものもたまに着てそれを売りたいです。 Tiktok、Instagram、Youtubeショ…",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": null,
+   "deadline": "",
+   "applyUrl": "https://www.lancers.jp/work/detail/5610566",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "",
+   "channel": null,
+   "order": 1041,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "lc-5610555",
+   "auto": true,
+   "media": "ランサーズ",
+   "group": "B",
+   "company": "ランサーズの依頼主",
+   "title": "【カメラマン募集】屋久杉家具のSNS動画制作依頼",
+   "tanka": "100,000円〜200,000円（固定報酬）",
+   "summary": "【依頼概要】 現在、屋久杉を使用した家具・テーブルのSNSコンテンツ制作を予定しており、撮影・編集をお願いできるカメラマン様を探しております。 撮影場所としては、以下の2か所を予定しています。 ・鹿児島市本名町のスタジオ…",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": null,
+   "deadline": "",
+   "applyUrl": "https://www.lancers.jp/work/detail/5610555",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "",
+   "channel": null,
+   "order": 1042,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "lc-5610531",
+   "auto": true,
+   "media": "ランサーズ",
+   "group": "B",
+   "company": "ランサーズの依頼主",
+   "title": "観光向けショート動画編集の作成",
+   "tanka": "20,000円〜50,000円（固定報酬）",
+   "summary": "初心者OK カンタン 継続依頼あり ご覧いただきありがとうございます！ 新規で海外観光・旅行系SNSアカウントを運営するにあたり、ショート動画編集を担当していただける方を募集しています。 ■仕事内容 ・60秒程度のショー…",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": null,
+   "deadline": "",
+   "applyUrl": "https://www.lancers.jp/work/detail/5610531",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "",
+   "channel": null,
+   "order": 1043,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "lc-5610380",
+   "auto": true,
+   "media": "ランサーズ",
+   "group": "B",
+   "company": "ランサーズの依頼主",
+   "title": "AIを活用したYouTube動画自動制作システムの開発（原稿→スライド・音声・アバター・字幕・編集）",
+   "tanka": "500,000円〜1,000,000円（固定報酬）",
+   "summary": "今回、添付のWORDファイルのようなyoutyube原稿をAIに放り込んで、僕がアバターで解説する動画（約２０分）を作成したいと思っています。スライドも字幕も編集もすべて自動で作成できればと思っています。 そこで、自分で…",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": null,
+   "deadline": "",
+   "applyUrl": "https://www.lancers.jp/work/detail/5610380",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "",
+   "channel": null,
+   "order": 1044,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "lc-5610376",
+   "auto": true,
+   "media": "ランサーズ",
+   "group": "B",
+   "company": "ランサーズの依頼主",
+   "title": "【動画編集者募集】SNS・YouTube広告用動画制作（リサイズ依頼）",
+   "tanka": "20,000円〜50,000円（固定報酬）",
+   "summary": "【依頼概要】 【タイトル】 【SNS・YouTube広告】動画のリサイズ依頼（1:1 / 9:16）※納品後、新規SNS用広告動画の制作依頼の可能性有 【依頼の概要・目的】 SNSおよびYouTube広告用の動画制作・リ…",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": null,
+   "deadline": "",
+   "applyUrl": "https://www.lancers.jp/work/detail/5610376",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "",
+   "channel": null,
+   "order": 1045,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "lc-5610351",
+   "auto": true,
+   "media": "ランサーズ",
+   "group": "B",
+   "company": "ランサーズの依頼主",
+   "title": "AIを活用した動画広告制作（絵コンテ～動画まで）",
+   "tanka": "10,000円〜20,000円（固定報酬）",
+   "summary": "CM動画（横型）の制作をお願いできるクリエイター様を募集いたします。 あらかじめ用意された構成をもとに、ストーリーボード作成からAIツールを活用した動画素材の生成、およびタイポグラフィ・モーショングラフィックスを用いた魅…",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": null,
+   "deadline": "",
+   "applyUrl": "https://www.lancers.jp/work/detail/5610351",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "",
+   "channel": null,
+   "order": 1046,
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "lc-5610159",
+   "auto": true,
+   "media": "ランサーズ",
+   "group": "B",
+   "company": "ランサーズの依頼主",
+   "title": "【報酬1万円】社内向けの教育動画作成・編集のお仕事【継続あり】",
+   "tanka": "10,000円〜20,000円（固定報酬）",
+   "summary": "ご覧いただきありがとうございます。 美容クリニックの社内向け教育動画を制作いただける動画編集者様を募集しております。 こちらでご用意する「絵コンテ」をもとに、美容医療に関する知識をスタッフ向けに理解しやすい動画へ編集いた…",
+   "requirements": [],
+   "formQuestions": [],
+   "refVideos": [],
+   "applicants": null,
+   "deadline": "",
+   "applyUrl": "https://www.lancers.jp/work/detail/5610159",
+   "fetchedAt": "2026-10-05",
+   "releasedAt": "",
+   "channel": null,
+   "order": 1047,
+   "firstSeen": "2026-10-05"
   }
  ]
 }
