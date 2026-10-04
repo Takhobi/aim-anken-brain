@@ -310,6 +310,7 @@ function viewPick(){
       <button class="btn ghost sm" data-act="reload">最新のリストを読み込む</button>
       <button class="btn primary sm" data-act="addjob-open">案件を自分で追加</button></div>
     ${S.flow?.kind === "addjob" ? addJobCard() : ""}
+    ${Object.keys(m.sourceStatus || {}).length ? `<p class="quiet" style="margin-top:8px;font-size:13px;color:var(--warn)">${Object.entries(m.sourceStatus).map(([k,v]) => `${esc(k)}：${esc(v)}`).join("／")}</p>` : ""}
     ${m.note ? `<p class="quiet" style="margin-top:8px;font-size:13px">${esc(m.note)}</p>` : ""}
   </section>
   <div class="view-head">

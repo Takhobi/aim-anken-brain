@@ -147,8 +147,10 @@ def lancers():
             try:
                 src = fetch(url)
             except Exception as e:
-                print("Lancers fetch failed", kw, page, e)
+                print("Lancers fetch failed", kw, page, repr(e))
                 continue
+            if "/work/detail/" not in src:
+                print("Lancers: 案件リンクが見つからない", kw, page, len(src), src[:200].replace("\n", " "))
             # 1件 = /work/detail/<id> のリンクから次のリンクまでの塊
             parts = re.split(r'(?=<a[^>]+href="(?:https://www\.lancers\.jp)?/work/detail/\d+)', src)
             for p in parts:
@@ -214,8 +216,33 @@ def main():
         except ValueError:
             return False
     keep = [j for j in curated["jobs"] if not deadline_passed(j.get("deadline")) and not stale(j)]
+    try:
+        with open("jobs.json", encoding="utf-8") as f:
+            prev_jobs = json.load(f).get("jobs", [])
+    except (OSError, ValueError):
+        prev_jobs = []
+
+    def carry_over(media):
+        """取得できなかった媒体は、前回の自動取得分（初めて載ってから7日以内）を残す"""
+        out = []
+        for j in prev_jobs:
+            if j.get("auto") and j.get("media") == media:
+                try:
+                    if (TODAY - datetime.strptime(j.get("firstSeen", ""), "%Y-%m-%d").date()).days <= FRESH_DAYS:
+                        out.append(j)
+                except ValueError:
+                    pass
+        return out
+
+    status = {}
     cw, cw_total = crowdworks()
+    if cw_total == 0:
+        cw = carry_over("クラウドワークス")
+        status["クラウドワークス"] = f"本日は取得できず、前回分（{len(cw)}件）を表示"
     lc, lc_total = lancers()
+    if lc_total == 0:
+        lc = carry_over("ランサーズ")
+        status["ランサーズ"] = f"本日は取得できず、前回分（{len(lc)}件）を表示"
     seen = {j["applyUrl"] for j in keep}
     titles = set()
     auto = []
@@ -225,11 +252,7 @@ def main():
         titles.add(j["title"])
         auto.append(j)
     # 初めてリストに載った日を引き継ぐ（画面の NEW 表示に使う）
-    try:
-        with open("jobs.json", encoding="utf-8") as f:
-            first = {j["applyUrl"]: j.get("firstSeen") for j in json.load(f).get("jobs", [])}
-    except (OSError, ValueError):
-        first = {}
+    first = {j["applyUrl"]: j.get("firstSeen") for j in prev_jobs}
     for i, j in enumerate(auto):
         j["order"] = 1000 + i
     jobs = keep + auto
@@ -240,6 +263,7 @@ def main():
         "autoUpdate": "毎日 朝6時ごろ（クラウドワークス・ランサーズの新着を自動取得）",
         "collected": cw_total + lc_total + curated.get("collectedManual", 0),
         "bySource": {"クラウドワークス": cw_total, "ランサーズ": lc_total, "Indeed（手動）": curated.get("collectedIndeed", 0)},
+        "sourceStatus": status,
         "note": "公開されている募集ページから要点をまとめたものです。自動取得の案件は単価と内容で機械的に絞っています。応募前に必ず元の募集ページで最新の内容を確認してください。",
         "jobs": jobs,
     }
